@@ -13,11 +13,15 @@
 @end
 
 @implementation SimpleTableViewController
-// Add begin by long.luo @2013/03/25
+// Added begin by long.luo @2013/03/25
 {
     NSArray *tableData;
+    
+    // Added begin by long.luo @2013/03/26
+    NSArray *thumbnails;
+    // Added end.
 }
-// Add end.
+// Added end.
 
 
 - (void)viewDidLoad
@@ -28,7 +32,13 @@
     // Initialize table data
     tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     // Add end.
+    
+    // Added begin by long.luo @2013/03/25
+    // Initialize thumbnails
+    thumbnails = [NSArray arrayWithObjects:@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg", @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg", nil];
+    // Added end.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -56,7 +66,8 @@
     
     cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     // Add begin by long.luo @2013/03/25
-    cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
+    //cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
+    cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
     // Add end.
     
     return cell;
