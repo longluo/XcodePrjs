@@ -23,6 +23,7 @@
 		4F710A6D1700B12A00A6B9FF /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5D1700B12A00A6B9FF /* thai_shrimp_cake.jpg */; };
 		4F710A6E1700B12A00A6B9FF /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */; };
 		4F710A6F1700B12A00A6B9FF /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */; };
+		4F710A731700B44000A6B9FF /* SingleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A721700B44000A6B9FF /* SingleTableCell.xib */; };
 		4FE4C36616FF664D00763D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36516FF664D00763D2C /* UIKit.framework */; };
 		4FE4C36816FF664D00763D2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36716FF664D00763D2C /* Foundation.framework */; };
 		4FE4C36A16FF664D00763D2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36916FF664D00763D2C /* CoreGraphics.framework */; };
@@ -54,6 +55,7 @@
 		4F710A5D1700B12A00A6B9FF /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		4F710A721700B44000A6B9FF /* SingleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleTableCell.xib; sourceTree = "<group>"; };
 		4FE4C36216FF664D00763D2C /* SingleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE4C36516FF664D00763D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FE4C36716FF664D00763D2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +142,7 @@
 				4FE4C37E16FF664D00763D2C /* SimpleTableViewController.m */,
 				4FE4C38016FF664D00763D2C /* SimpleTableViewController.xib */,
 				4FE4C36C16FF664D00763D2C /* Supporting Files */,
+				4F710A721700B44000A6B9FF /* SingleTableCell.xib */,
 			);
 			path = SingleTable;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				4F710A6D1700B12A00A6B9FF /* thai_shrimp_cake.jpg in Resources */,
 				4F710A6E1700B12A00A6B9FF /* vegetable_curry.jpg in Resources */,
 				4F710A6F1700B12A00A6B9FF /* white_chocolate_donut.jpg in Resources */,
+				4F710A731700B44000A6B9FF /* SingleTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
