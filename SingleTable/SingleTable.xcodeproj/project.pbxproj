@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FE4C36616FF664D00763D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36516FF664D00763D2C /* UIKit.framework */; };
+		4FE4C36816FF664D00763D2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36716FF664D00763D2C /* Foundation.framework */; };
+		4FE4C36A16FF664D00763D2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36916FF664D00763D2C /* CoreGraphics.framework */; };
+		4FE4C37016FF664D00763D2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4C36E16FF664D00763D2C /* InfoPlist.strings */; };
+		4FE4C37216FF664D00763D2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4C37116FF664D00763D2C /* main.m */; };
+		4FE4C37616FF664D00763D2C /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4C37516FF664D00763D2C /* SimpleTableAppDelegate.m */; };
+		4FE4C37816FF664D00763D2C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4C37716FF664D00763D2C /* Default.png */; };
+		4FE4C37A16FF664D00763D2C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4C37916FF664D00763D2C /* Default@2x.png */; };
+		4FE4C37C16FF664D00763D2C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4C37B16FF664D00763D2C /* Default-568h@2x.png */; };
+		4FE4C37F16FF664D00763D2C /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4C37E16FF664D00763D2C /* SimpleTableViewController.m */; };
+		4FE4C38216FF664D00763D2C /* SimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4C38016FF664D00763D2C /* SimpleTableViewController.xib */; };
+		4FE4C38916FF6A7F00763D2C /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4C38816FF6A7F00763D2C /* creme_brelee.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FE4C36216FF664D00763D2C /* SingleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE4C36516FF664D00763D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FE4C36716FF664D00763D2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FE4C36916FF664D00763D2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FE4C36D16FF664D00763D2C /* SingleTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingleTable-Info.plist"; sourceTree = "<group>"; };
+		4FE4C36F16FF664D00763D2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FE4C37116FF664D00763D2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FE4C37316FF664D00763D2C /* SingleTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SingleTable-Prefix.pch"; sourceTree = "<group>"; };
+		4FE4C37416FF664D00763D2C /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
+		4FE4C37516FF664D00763D2C /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
+		4FE4C37716FF664D00763D2C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4FE4C37916FF664D00763D2C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4FE4C37B16FF664D00763D2C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4FE4C37D16FF664D00763D2C /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		4FE4C37E16FF664D00763D2C /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		4FE4C38116FF664D00763D2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleTableViewController.xib; sourceTree = "<group>"; };
+		4FE4C38816FF6A7F00763D2C /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = ../../../Desktop/creme_brelee.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FE4C35F16FF664D00763D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE4C36616FF664D00763D2C /* UIKit.framework in Frameworks */,
+				4FE4C36816FF664D00763D2C /* Foundation.framework in Frameworks */,
+				4FE4C36A16FF664D00763D2C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FE4C35916FF664D00763D2C = {
+			isa = PBXGroup;
+			children = (
+				4FE4C36B16FF664D00763D2C /* SingleTable */,
+				4FE4C36416FF664D00763D2C /* Frameworks */,
+				4FE4C36316FF664D00763D2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FE4C36316FF664D00763D2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FE4C36216FF664D00763D2C /* SingleTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FE4C36416FF664D00763D2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FE4C36516FF664D00763D2C /* UIKit.framework */,
+				4FE4C36716FF664D00763D2C /* Foundation.framework */,
+				4FE4C36916FF664D00763D2C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FE4C36B16FF664D00763D2C /* SingleTable */ = {
+			isa = PBXGroup;
+			children = (
+				4FE4C38816FF6A7F00763D2C /* creme_brelee.jpg */,
+				4FE4C37416FF664D00763D2C /* SimpleTableAppDelegate.h */,
+				4FE4C37516FF664D00763D2C /* SimpleTableAppDelegate.m */,
+				4FE4C37D16FF664D00763D2C /* SimpleTableViewController.h */,
+				4FE4C37E16FF664D00763D2C /* SimpleTableViewController.m */,
+				4FE4C38016FF664D00763D2C /* SimpleTableViewController.xib */,
+				4FE4C36C16FF664D00763D2C /* Supporting Files */,
+			);
+			path = SingleTable;
+			sourceTree = "<group>";
+		};
+		4FE4C36C16FF664D00763D2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FE4C36D16FF664D00763D2C /* SingleTable-Info.plist */,
+				4FE4C36E16FF664D00763D2C /* InfoPlist.strings */,
+				4FE4C37116FF664D00763D2C /* main.m */,
+				4FE4C37316FF664D00763D2C /* SingleTable-Prefix.pch */,
+				4FE4C37716FF664D00763D2C /* Default.png */,
+				4FE4C37916FF664D00763D2C /* Default@2x.png */,
+				4FE4C37B16FF664D00763D2C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FE4C36116FF664D00763D2C /* SingleTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FE4C38516FF664D00763D2C /* Build configuration list for PBXNativeTarget "SingleTable" */;
+			buildPhases = (
+				4FE4C35E16FF664D00763D2C /* Sources */,
+				4FE4C35F16FF664D00763D2C /* Frameworks */,
+				4FE4C36016FF664D00763D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingleTable;
+			productName = SingleTable;
+			productReference = 4FE4C36216FF664D00763D2C /* SingleTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FE4C35A16FF664D00763D2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SimpleTable;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Long Luo";
+			};
+			buildConfigurationList = 4FE4C35D16FF664D00763D2C /* Build configuration list for PBXProject "SingleTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FE4C35916FF664D00763D2C;
+			productRefGroup = 4FE4C36316FF664D00763D2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FE4C36116FF664D00763D2C /* SingleTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FE4C36016FF664D00763D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE4C37016FF664D00763D2C /* InfoPlist.strings in Resources */,
+				4FE4C37816FF664D00763D2C /* Default.png in Resources */,
+				4FE4C37A16FF664D00763D2C /* Default@2x.png in Resources */,
+				4FE4C37C16FF664D00763D2C /* Default-568h@2x.png in Resources */,
+				4FE4C38216FF664D00763D2C /* SimpleTableViewController.xib in Resources */,
+				4FE4C38916FF6A7F00763D2C /* creme_brelee.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FE4C35E16FF664D00763D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE4C37216FF664D00763D2C /* main.m in Sources */,
+				4FE4C37616FF664D00763D2C /* SimpleTableAppDelegate.m in Sources */,
+				4FE4C37F16FF664D00763D2C /* SimpleTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FE4C36E16FF664D00763D2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE4C36F16FF664D00763D2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FE4C38016FF664D00763D2C /* SimpleTableViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE4C38116FF664D00763D2C /* en */,
+			);
+			name = SimpleTableViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FE4C38316FF664D00763D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FE4C38416FF664D00763D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FE4C38616FF664D00763D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingleTable/SingleTable-Prefix.pch";
+				INFOPLIST_FILE = "SingleTable/SingleTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FE4C38716FF664D00763D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingleTable/SingleTable-Prefix.pch";
+				INFOPLIST_FILE = "SingleTable/SingleTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FE4C35D16FF664D00763D2C /* Build configuration list for PBXProject "SingleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FE4C38316FF664D00763D2C /* Debug */,
+				4FE4C38416FF664D00763D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FE4C38516FF664D00763D2C /* Build configuration list for PBXNativeTarget "SingleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FE4C38616FF664D00763D2C /* Debug */,
+				4FE4C38716FF664D00763D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FE4C35A16FF664D00763D2C /* Project object */;
+}
