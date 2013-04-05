@@ -28,25 +28,25 @@
 }
 
 
-- (IBAction)showEmail:(id)sender
-{
+- (IBAction)showEmail:(id)sender {
     // Email Subject
     NSString *emailTitle = @"Test Email";
     // Email Content
-    NSString *messageBody = @"iOS programming is so fun!";
+    NSString *messageBody = @"<h1>Learning iOS Programming!</h1>"; // Change the message body to HTML
     // To address
-    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
+    NSArray *toRecipents = [NSArray arrayWithObject:@"long.luo@outlook.com"];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
     [mc setSubject:emailTitle];
-    [mc setMessageBody:messageBody isHTML:NO];
+    [mc setMessageBody:messageBody isHTML:YES];
     [mc setToRecipients:toRecipents];
     
     // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:NULL];
     
 }
+
 
 - (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
