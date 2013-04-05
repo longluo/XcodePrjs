@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1A2166170ECB060077C43B /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1A2165170ECB060077C43B /* SimpleTableCell.xib */; };
+		4F1A2169170ECCA80077C43B /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1A2168170ECCA80077C43B /* SimpleTableCell.m */; };
 		4F710A601700B12A00A6B9FF /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A501700B12A00A6B9FF /* angry_birds_cake.jpg */; };
 		4F710A611700B12A00A6B9FF /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A511700B12A00A6B9FF /* creme_brelee.jpg */; };
 		4F710A621700B12A00A6B9FF /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A521700B12A00A6B9FF /* egg_benedict.jpg */; };
@@ -23,7 +25,6 @@
 		4F710A6D1700B12A00A6B9FF /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5D1700B12A00A6B9FF /* thai_shrimp_cake.jpg */; };
 		4F710A6E1700B12A00A6B9FF /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */; };
 		4F710A6F1700B12A00A6B9FF /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */; };
-		4F710A731700B44000A6B9FF /* SingleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A721700B44000A6B9FF /* SingleTableCell.xib */; };
 		4FE4C36616FF664D00763D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36516FF664D00763D2C /* UIKit.framework */; };
 		4FE4C36816FF664D00763D2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36716FF664D00763D2C /* Foundation.framework */; };
 		4FE4C36A16FF664D00763D2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36916FF664D00763D2C /* CoreGraphics.framework */; };
@@ -39,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F1A2165170ECB060077C43B /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		4F1A2167170ECCA80077C43B /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
+		4F1A2168170ECCA80077C43B /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
 		4F710A501700B12A00A6B9FF /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_birds_cake.jpg; sourceTree = "<group>"; };
 		4F710A511700B12A00A6B9FF /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
 		4F710A521700B12A00A6B9FF /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
@@ -55,7 +59,6 @@
 		4F710A5D1700B12A00A6B9FF /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
-		4F710A721700B44000A6B9FF /* SingleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleTableCell.xib; sourceTree = "<group>"; };
 		4FE4C36216FF664D00763D2C /* SingleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE4C36516FF664D00763D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FE4C36716FF664D00763D2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,7 +95,7 @@
 		4FE4C35916FF664D00763D2C = {
 			isa = PBXGroup;
 			children = (
-				4FE4C36B16FF664D00763D2C /* SingleTable */,
+				4FE4C36B16FF664D00763D2C /* SimpleTable */,
 				4FE4C36416FF664D00763D2C /* Frameworks */,
 				4FE4C36316FF664D00763D2C /* Products */,
 			);
@@ -116,7 +119,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FE4C36B16FF664D00763D2C /* SingleTable */ = {
+		4FE4C36B16FF664D00763D2C /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
 				4F710A501700B12A00A6B9FF /* angry_birds_cake.jpg */,
@@ -142,8 +145,11 @@
 				4FE4C37E16FF664D00763D2C /* SimpleTableViewController.m */,
 				4FE4C38016FF664D00763D2C /* SimpleTableViewController.xib */,
 				4FE4C36C16FF664D00763D2C /* Supporting Files */,
-				4F710A721700B44000A6B9FF /* SingleTableCell.xib */,
+				4F1A2165170ECB060077C43B /* SimpleTableCell.xib */,
+				4F1A2167170ECCA80077C43B /* SimpleTableCell.h */,
+				4F1A2168170ECCA80077C43B /* SimpleTableCell.m */,
 			);
+			name = SimpleTable;
 			path = SingleTable;
 			sourceTree = "<group>";
 		};
@@ -235,7 +241,7 @@
 				4F710A6D1700B12A00A6B9FF /* thai_shrimp_cake.jpg in Resources */,
 				4F710A6E1700B12A00A6B9FF /* vegetable_curry.jpg in Resources */,
 				4F710A6F1700B12A00A6B9FF /* white_chocolate_donut.jpg in Resources */,
-				4F710A731700B44000A6B9FF /* SingleTableCell.xib in Resources */,
+				4F1A2166170ECB060077C43B /* SimpleTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +255,7 @@
 				4FE4C37216FF664D00763D2C /* main.m in Sources */,
 				4FE4C37616FF664D00763D2C /* SimpleTableAppDelegate.m in Sources */,
 				4FE4C37F16FF664D00763D2C /* SimpleTableViewController.m in Sources */,
+				4F1A2169170ECCA80077C43B /* SimpleTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

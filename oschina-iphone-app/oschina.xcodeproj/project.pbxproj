@@ -2201,7 +2201,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				"HEADER_SEARCH_PATHS[arch=*]" = "${SDK_DIR}/usr/include/libxml2";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -2231,7 +2231,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				"HEADER_SEARCH_PATHS[arch=*]" = "${SDK_DIR}/usr/include/libxml2";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
