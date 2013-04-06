@@ -8,6 +8,7 @@
 
 #import "MyLocationViewController.h"
 
+/*
 @interface MyLocationViewController ()
 
 @end
@@ -25,5 +26,31 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+@end
+*/
+
+@interface MyLocationViewController ()
+
+@end
+
+@implementation MyLocationViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.mapView.delegate = self;
+}
+
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+}
+
+
+
+@synthesize mapView;
 
 @end

@@ -23,6 +23,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Maps" id="ryb-Dx-cFM"/>
+                    <connections>
+                        <outlet property="mapView" destination="bpC-v7-JYC" id="kGF-ol-hR4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
