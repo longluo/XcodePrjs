@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F1937181710670000BE9A22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1937171710670000BE9A22 /* UIKit.framework */; };
+		4F19371A1710670000BE9A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1937191710670000BE9A22 /* Foundation.framework */; };
+		4F19371C1710670000BE9A22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F19371B1710670000BE9A22 /* CoreGraphics.framework */; };
+		4F1937221710670000BE9A22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F1937201710670000BE9A22 /* InfoPlist.strings */; };
+		4F1937241710670000BE9A22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1937231710670000BE9A22 /* main.m */; };
+		4F1937281710670000BE9A22 /* SocialSharingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1937271710670000BE9A22 /* SocialSharingAppDelegate.m */; };
+		4F19372A1710670000BE9A22 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1937291710670000BE9A22 /* Default.png */; };
+		4F19372C1710670000BE9A22 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F19372B1710670000BE9A22 /* Default@2x.png */; };
+		4F19372E1710670000BE9A22 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F19372D1710670000BE9A22 /* Default-568h@2x.png */; };
+		4F1937311710670000BE9A22 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F19372F1710670000BE9A22 /* MainStoryboard.storyboard */; };
+		4F1937341710670000BE9A22 /* SocialSharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1937331710670000BE9A22 /* SocialSharingViewController.m */; };
+		4F19373B1710684100BE9A22 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F19373A1710684100BE9A22 /* Social.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F1937141710670000BE9A22 /* SocialSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1937171710670000BE9A22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4F1937191710670000BE9A22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F19371B1710670000BE9A22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4F19371F1710670000BE9A22 /* SocialSharing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialSharing-Info.plist"; sourceTree = "<group>"; };
+		4F1937211710670000BE9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F1937231710670000BE9A22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F1937251710670000BE9A22 /* SocialSharing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialSharing-Prefix.pch"; sourceTree = "<group>"; };
+		4F1937261710670000BE9A22 /* SocialSharingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialSharingAppDelegate.h; sourceTree = "<group>"; };
+		4F1937271710670000BE9A22 /* SocialSharingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialSharingAppDelegate.m; sourceTree = "<group>"; };
+		4F1937291710670000BE9A22 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4F19372B1710670000BE9A22 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4F19372D1710670000BE9A22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4F1937301710670000BE9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4F1937321710670000BE9A22 /* SocialSharingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialSharingViewController.h; sourceTree = "<group>"; };
+		4F1937331710670000BE9A22 /* SocialSharingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialSharingViewController.m; sourceTree = "<group>"; };
+		4F19373A1710684100BE9A22 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F1937111710670000BE9A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F19373B1710684100BE9A22 /* Social.framework in Frameworks */,
+				4F1937181710670000BE9A22 /* UIKit.framework in Frameworks */,
+				4F19371A1710670000BE9A22 /* Foundation.framework in Frameworks */,
+				4F19371C1710670000BE9A22 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F19370B1710670000BE9A22 = {
+			isa = PBXGroup;
+			children = (
+				4F19373A1710684100BE9A22 /* Social.framework */,
+				4F19371D1710670000BE9A22 /* SocialSharing */,
+				4F1937161710670000BE9A22 /* Frameworks */,
+				4F1937151710670000BE9A22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F1937151710670000BE9A22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F1937141710670000BE9A22 /* SocialSharing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F1937161710670000BE9A22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F1937171710670000BE9A22 /* UIKit.framework */,
+				4F1937191710670000BE9A22 /* Foundation.framework */,
+				4F19371B1710670000BE9A22 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F19371D1710670000BE9A22 /* SocialSharing */ = {
+			isa = PBXGroup;
+			children = (
+				4F1937261710670000BE9A22 /* SocialSharingAppDelegate.h */,
+				4F1937271710670000BE9A22 /* SocialSharingAppDelegate.m */,
+				4F19372F1710670000BE9A22 /* MainStoryboard.storyboard */,
+				4F1937321710670000BE9A22 /* SocialSharingViewController.h */,
+				4F1937331710670000BE9A22 /* SocialSharingViewController.m */,
+				4F19371E1710670000BE9A22 /* Supporting Files */,
+			);
+			path = SocialSharing;
+			sourceTree = "<group>";
+		};
+		4F19371E1710670000BE9A22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F19371F1710670000BE9A22 /* SocialSharing-Info.plist */,
+				4F1937201710670000BE9A22 /* InfoPlist.strings */,
+				4F1937231710670000BE9A22 /* main.m */,
+				4F1937251710670000BE9A22 /* SocialSharing-Prefix.pch */,
+				4F1937291710670000BE9A22 /* Default.png */,
+				4F19372B1710670000BE9A22 /* Default@2x.png */,
+				4F19372D1710670000BE9A22 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F1937131710670000BE9A22 /* SocialSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F1937371710670000BE9A22 /* Build configuration list for PBXNativeTarget "SocialSharing" */;
+			buildPhases = (
+				4F1937101710670000BE9A22 /* Sources */,
+				4F1937111710670000BE9A22 /* Frameworks */,
+				4F1937121710670000BE9A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialSharing;
+			productName = SocialSharing;
+			productReference = 4F1937141710670000BE9A22 /* SocialSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F19370C1710670000BE9A22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SocialSharing;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Long Luo";
+			};
+			buildConfigurationList = 4F19370F1710670000BE9A22 /* Build configuration list for PBXProject "SocialSharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F19370B1710670000BE9A22;
+			productRefGroup = 4F1937151710670000BE9A22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F1937131710670000BE9A22 /* SocialSharing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F1937121710670000BE9A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1937221710670000BE9A22 /* InfoPlist.strings in Resources */,
+				4F19372A1710670000BE9A22 /* Default.png in Resources */,
+				4F19372C1710670000BE9A22 /* Default@2x.png in Resources */,
+				4F19372E1710670000BE9A22 /* Default-568h@2x.png in Resources */,
+				4F1937311710670000BE9A22 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F1937101710670000BE9A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1937241710670000BE9A22 /* main.m in Sources */,
+				4F1937281710670000BE9A22 /* SocialSharingAppDelegate.m in Sources */,
+				4F1937341710670000BE9A22 /* SocialSharingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F1937201710670000BE9A22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1937211710670000BE9A22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F19372F1710670000BE9A22 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1937301710670000BE9A22 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F1937351710670000BE9A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4F1937361710670000BE9A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F1937381710670000BE9A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialSharing/SocialSharing-Prefix.pch";
+				INFOPLIST_FILE = "SocialSharing/SocialSharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F1937391710670000BE9A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialSharing/SocialSharing-Prefix.pch";
+				INFOPLIST_FILE = "SocialSharing/SocialSharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F19370F1710670000BE9A22 /* Build configuration list for PBXProject "SocialSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F1937351710670000BE9A22 /* Debug */,
+				4F1937361710670000BE9A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F1937371710670000BE9A22 /* Build configuration list for PBXNativeTarget "SocialSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F1937381710670000BE9A22 /* Debug */,
+				4F1937391710670000BE9A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F19370C1710670000BE9A22 /* Project object */;
+}
