@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplication</key>
+	<string>iDVD</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>menuLocation</key>
+		<integer>0</integer>
+		<key>menuName</key>
+		<string></string>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDRequires</key>
+		<string>iDVD project open.</string>
+		<key>AMDSummary</key>
+		<string>This action creates a new menu in the current iDVD project.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>iDVD</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Menu</string>
+		<string>Create</string>
+		<string>Make</string>
+		<string>New</string>
+		<string>DVD</string>
+	</array>
+	<key>AMName</key>
+	<string>New iDVD Menu</string>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>iDVD</string>
+			<key>Resource</key>
+			<string>com.apple.iDVD</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.0.1</string>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>New iDVD Menu</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.NewiDVDMenu</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMNewiDVDMenuAction</string>
+</dict>
+</plist>

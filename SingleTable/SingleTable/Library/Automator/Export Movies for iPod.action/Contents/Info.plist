@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>QuickTime Player</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<true/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<array>
+		<string>AMCategoryMovies</string>
+		<string>AMCategoryMusic</string>
+	</array>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>deleteSourceFiles</key>
+		<false/>
+		<key>destinationFolder</key>
+		<string>~/Movies</string>
+		<key>format</key>
+		<integer>0</integer>
+	</dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDAlert</key>
+		<string></string>
+		<key>AMDInput</key>
+		<string>Movie files</string>
+		<key>AMDNote</key>
+		<string></string>
+		<key>AMDOptions</key>
+		<string></string>
+		<key>AMDRequires</key>
+		<string></string>
+		<key>AMDResult</key>
+		<string>Movies formatted for iPhone, iPod, or Apple TV saved to the location chosen from the pop-up menu. New movie files passed to following action</string>
+		<key>AMDSummary</key>
+		<string>This action creates movie files that are formatted for viewing on an iPhone, iPod, or on an Apple TV.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>QuickTime</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>iPod</string>
+		<string>Export</string>
+		<string>Compression</string>
+		<string>Movie</string>
+		<string>Apple TV</string>
+		<string>iPhone</string>
+	</array>
+	<key>AMName</key>
+	<string>Export Movies</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Export Movies for iPod</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.Export_Movies</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Export Movies for iPod</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2006-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>ExportMovies</string>
+</dict>
+</plist>

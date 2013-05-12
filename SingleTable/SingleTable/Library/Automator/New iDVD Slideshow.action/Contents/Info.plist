@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>iDVD</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>buttonFace</key>
+		<false/>
+		<key>chosenPath</key>
+		<string></string>
+		<key>fitToAudio</key>
+		<false/>
+		<key>includeAudio</key>
+		<false/>
+		<key>slideDuration</key>
+		<integer>0</integer>
+		<key>slideTransition</key>
+		<integer>0</integer>
+		<key>slideshowName</key>
+		<string>New Slideshow</string>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDAlert</key>
+		<string></string>
+		<key>AMDInput</key>
+		<string>Image files</string>
+		<key>AMDNote</key>
+		<string></string>
+		<key>AMDOptions</key>
+		<string></string>
+		<key>AMDRequires</key>
+		<string>iDVD project open and menu displayed.</string>
+		<key>AMDResult</key>
+		<string></string>
+		<key>AMDSummary</key>
+		<string>Creates a new slideshow in the current iDVD menu using the input images.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>iDVD</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Slideshow</string>
+		<string>Image</string>
+		<string>Photo</string>
+		<string>DVD</string>
+		<string>Create</string>
+		<string>Make</string>
+		<string>New</string>
+		<string>Add</string>
+		<string>Combine</string>
+	</array>
+	<key>AMName</key>
+	<string>New iDVD Slideshow</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.idvd.slideshow-object</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>iDVD</string>
+			<key>Resource</key>
+			<string>com.apple.iDVD</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.0.1</string>
+		</dict>
+		<dict>
+			<key>Display Name</key>
+			<string>iPhoto</string>
+			<key>Resource</key>
+			<string>com.apple.iPhoto</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.0.3</string>
+		</dict>
+		<dict>
+			<key>Display Name</key>
+			<string>iTunes</string>
+			<key>Resource</key>
+			<string>com.apple.iTunes</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.6</string>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>New iDVD Slideshow</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.CreateiDVDSlideshow</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2005-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMNewiDVDSlideshowAction</string>
+</dict>
+</plist>

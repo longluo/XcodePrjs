@@ -1,0 +1,21 @@
+//	File: avfDesktopRelease.xcconfig
+// 
+//	$Log$ 
+//	27apr2010 ABB
+//	7913679 Define OTHER_CFLAGS <jim>
+//
+//	24apr2010 jim
+//	clean up xcconfig files <jeremyj, nikhil>
+//
+//	18apr2010 jim
+//	first time. <abb>
+// 
+
+XCCONFIG_AVF_DESKTOP_RELEASE = INCLUDED
+
+#include "avfDesktop__.xcconfig"
+#include "avf__Release.xcconfig"
+
+COPY_PHASE_STRIP = YES
+
+OTHER_CFLAGS = $(value) $(AVF_DESKTOP_CFLAGS) $(AVF_RELEASE_CFLAGS)

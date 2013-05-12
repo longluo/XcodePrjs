@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+ 
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>TITLE</dc:title>
+    <dc:language>en</dc:language>
+    <dc:identifier id="BookId" opf:scheme="ISBN">123456789X</dc:identifier>
+    <dc:creator opf:file-as="" opf:role="aut">CREATOR</dc:creator>
+  </metadata>
+ 
+  <manifest>
+		<item id="stylesheet" href="main.css" media-type="text/css"/>
+<!--    <item id="myfont" href="css/myfont.otf" media-type="application/x-font-opentype"/> -->
+    <item id="ncx" href="book.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+ 
+  <spine toc="ncx">
+  </spine>
+ 
+  <guide>
+    <reference type="loi" title="List Of Illustrations" href="appendix.html#figures" />
+  </guide>
+ 
+</package>

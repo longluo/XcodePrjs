@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.pdf</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<array>
+		<string>PDF</string>
+	</array>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryPDFs</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>password</key>
+		<string></string>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>PDF documents passed from the previous action</string>
+		<key>AMDRequires</key>
+		<string></string>
+		<key>AMDResult</key>
+		<string>Encrypted PDF documents</string>
+		<key>AMDSummary</key>
+		<string>This action encrypts PDF documents using the provided password.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Preview</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Password</string>
+		<string>Protect</string>
+	</array>
+	<key>AMName</key>
+	<string>Encrypt PDF Documents</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.pdf</string>
+		</array>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12D29</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Encrypt PDF Documents</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.action.encryptpdfdocument</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Encrypt PDF Documents</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>409.2</string>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>4F250</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12D29</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F250</string>
+	<key>NSPrincipalClass</key>
+	<string>EncryptPDF</string>
+</dict>
+</plist>

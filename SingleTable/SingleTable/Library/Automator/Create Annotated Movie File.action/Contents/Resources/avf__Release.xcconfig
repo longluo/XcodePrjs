@@ -1,0 +1,39 @@
+//	File: avf__Release.xcconfig
+// 
+//	$Log$ 
+//	13jun2012 jalliot
+//	Merged changes from Mac-MountainLion-Dev to Mac-MountainLion.
+//
+//		13jun2012 jalliot
+//		<rdar://problem/10508462> Turn off logging & experiments for Zin. <elee>
+//
+//	14may2010 jim
+//	Turn logging & experiments back on for trunk <jsam>
+//
+//	11may2010 jim
+//	<rdar://problem/7919752> Turn off logging & experiments in release builds for final push <ABB>
+//
+//	27apr2010 ABB
+//	7913679 Define AVF_RELEASE_CFLAGS <jim>
+//
+//	26apr2010 jim
+//	add preprocessor defs to control logging and experiments <abb>
+//
+//	24apr2010 jim
+//	clean up xcconfig files <jeremyj, nikhil>
+//
+//	18apr2010 jim
+//	first time. <abb>
+// 
+
+XCCONFIG_AVF____RELEASE = INCLUDED
+
+#include "avfBase.xcconfig"
+
+DEAD_CODE_STRIPPING = YES
+
+GCC_PREPROCESSOR_DEFINITIONS = FIG_DEBUG_LEVEL=FIG_DEBUG_LEVEL_PRODUCTION FIG_DISABLE_ALL_LOGGING=1 FIG_DISABLE_ALL_EXPERIMENTS=1
+
+GCC_OPTIMIZATION_LEVEL = s
+
+AVF_RELEASE_CFLAGS = $(AVF_BASE_CFLAGS)

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.itunes.item-object</string>
+		</array>
+	</dict>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.itunes.item-object</string>
+		</array>
+	</dict>
+	<key>Specific Keywords</key>
+	<array>
+		<string>Find</string>
+		<string>Get</string>
+		<string>Music</string>
+		<string>Song</string>
+		<string>Track</string>
+		<string>Playlist</string>
+	</array>
+	<key>application</key>
+	<string>iTunes</string>
+	<key>AMCategory</key>
+	<string>AMCategoryMusic</string>
+	<key>defined_types</key>
+	<dict>
+		<key>com.apple.itunes.item-object</key>
+		<dict>
+			<key>name</key>
+			<string>iTunes items</string>
+		</dict>
+		<key>com.apple.itunes.playlist-object</key>
+		<dict>
+			<key>name</key>
+			<string>iTunes playlists</string>
+		</dict>
+		<key>com.apple.itunes.source-object</key>
+		<dict>
+			<key>name</key>
+			<string>iTunes sources</string>
+		</dict>
+		<key>com.apple.itunes.track-object</key>
+		<dict>
+			<key>name</key>
+			<string>iTunes songs</string>
+		</dict>
+	</dict>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.itunes.source-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.itunes.source-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>source</string>
+			<key>plural name</key>
+			<string>sources</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>capacity</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>free space</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>enumeration</key>
+					<array>
+						<string>library</string>
+						<string>iPod</string>
+						<string>audio CD</string>
+						<string>MP3 CD</string>
+						<string>device</string>
+						<string>radio tuner</string>
+						<string>shared library</string>
+						<string>unknown</string>
+					</array>
+					<key>name</key>
+					<string>kind</string>
+					<key>type</key>
+					<string>enumeration</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.itunes.playlist-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.itunes.playlist-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>source</string>
+			<key>elements</key>
+			<array>
+				<string>track</string>
+			</array>
+			<key>name</key>
+			<string>playlist</string>
+			<key>plural name</key>
+			<string>playlists</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>source</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>duration</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>shuffle</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+			</array>
+			<key>subclasses</key>
+			<array>
+				<string>audio CD playlist</string>
+				<string>device playlist</string>
+				<string>library playlist</string>
+				<string>radio tuner playlist</string>
+				<string>user playlist</string>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.itunes.track-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.itunes.track-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>playlist</string>
+			<key>name</key>
+			<string>track</string>
+			<key>plural name</key>
+			<string>tracks</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>playlist</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>album</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>artist</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bit rate</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>compilation</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>composer</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>date added</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>disc count</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>disc number</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>duration</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>enabled</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>genre</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>kind</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>modification date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>played count</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>played date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>rating</string>
+					<key>type</key>
+					<string>rating</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>sample rate</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>track count</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>track number</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>volume adjustment</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>year</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+			</array>
+			<key>subclasses</key>
+			<array>
+				<string>audio CD track</string>
+				<string>device track</string>
+				<string>file track</string>
+				<string>shared track</string>
+				<string>URL track</string>
+			</array>
+		</dict>
+	</array>
+	<key>iconName</key>
+	<string>iTunes</string>
+	<key>scripts</key>
+	<dict>
+		<key>filter items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to {}
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			%@
+		end tell
+	end timeout
+
+	return foundItems
+end run
+</string>
+		<key>find every item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			repeat with i in every %@
+				set foundItems to foundItems &amp; (%@)
+			end repeat
+		end tell
+	end timeout
+	
+	return foundItems
+end run</string>
+		<key>find items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			set foundItems to foundItems &amp; (%@)
+		end tell
+	end timeout
+
+	return foundItems
+end run
+</string>
+		<key>get selected items</key>
+		<string>on run {input, parameters}
+	set output to {}
+	set currentSelection to {}
+	
+	tell application &quot;iTunes&quot;
+		repeat with aWindow in windows
+			if class of aWindow is browser window then
+				set currentSelection to selection of aWindow
+				exit repeat
+			else if class of aWindow is playlist window then
+				set currentSelection to selection of aWindow
+				exit repeat
+			end if
+		end repeat
+	end tell
+	set output to (input &amp; currentSelection)
+	return output
+end run
+</string>
+	</dict>
+	<key>supported generic actions</key>
+	<array>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Get_Selected_iTunes_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>GetSelectedItemsAction</string>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Find_iTunes_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FindItemsAction</string>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Filter_iTunes_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FilterItemsAction</string>
+			<key>Version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.string</string>
+			<string>com.apple.cocoa.attributed-string</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>System</string>
+	<key>AMCategory</key>
+	<string>AMCategoryUtilities</string>
+	<key>AMDefaultParameters</key>
+	<dict/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>Text passed in from the previous action.</string>
+		<key>AMDSummary</key>
+		<string>This action copies the given information to the clipboard.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Action</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Copy</string>
+	</array>
+	<key>AMName</key>
+	<string>Copy to Clipboard</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.string</string>
+			<string>com.apple.cocoa.attributed-string</string>
+		</array>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Copy to Clipboard</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.CopyToClipboard</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.2.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMCopyToClipboardAction</string>
+</dict>
+</plist>

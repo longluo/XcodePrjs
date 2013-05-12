@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>/bin/bash</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-c</string>
+			<string>%</string>
+			<string>-</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>cat</string>
+			<string>for f in "$@"&#10;do&#10;&#09;echo "$f"&#10;done</string>
+		</array>
+	</dict>
+
+	<key>/bin/csh</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>@</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>cat</string>
+			<string>while ( $# )&#10;&#09;echo "$1"&#10;&#09;shift&#10;end</string>
+		</array>
+	</dict>
+		
+	<key>/bin/ksh</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-c</string>
+			<string>%</string>
+			<string>-</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>cat</string>
+			<string>for f in "$@"&#10;do&#10;&#09;echo "$f"&#10;done</string>
+		</array>
+	</dict>
+
+	<key>/bin/sh</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-c</string>
+			<string>%</string>
+			<string>-</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>cat</string>
+			<string>for f in "$@"&#10;do&#10;&#09;echo "$f"&#10;done</string>
+		</array>
+	</dict>
+
+	<key>/bin/tcsh</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>@</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>cat</string>
+			<string>while ( $# )&#10;&#09;echo "$1"&#10;&#09;shift&#10;end</string>
+		</array>
+	</dict>
+
+	<key>/bin/zsh</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-c</string>
+			<string>%</string>
+			<string>-</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>cat</string>
+			<string>for f in "$@"&#10;do&#10;&#09;echo "$f"&#10;done</string>
+		</array>
+	</dict>
+
+	<key>/usr/bin/perl</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-e</string>
+			<string>%</string>
+			<string>--</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>while (&lt;&gt;) {&#10;&#09;print $_;&#10;}</string>
+			<string>foreach (@ARGV) {&#10;&#09;print "$_\n"&#10;}</string>
+		</array>
+	</dict>
+
+	<key>/usr/bin/python</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-c</string>
+			<string>%</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>import sys&#10;&#10;for f in sys.stdin:&#10;&#09;print f,</string>
+			<string>import sys&#10;&#10;for f in sys.argv[1:]:&#10;&#09;print f</string>
+		</array>
+	</dict>
+
+	<key>/usr/bin/ruby</key>
+	<dict>
+		<key>args</key>
+		<array>
+			<string>-e</string>
+			<string>%</string>
+			<string>--</string>
+		</array>
+		<key>script</key>
+		<array>
+			<string>ARGF.each do |f|&#10;&#09;puts f&#10;end</string>
+			<string>ARGV.each do |f|&#10;&#09;puts f&#10;end</string>
+		</array>
+	</dict>
+
+</dict>
+</plist>

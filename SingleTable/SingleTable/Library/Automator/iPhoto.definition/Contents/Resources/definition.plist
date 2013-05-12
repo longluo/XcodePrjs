@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMActionScripts</key>
+	<dict>
+		<key>filter items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to {}
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			%@
+		end tell
+	end timeout
+
+	return foundItems
+end run</string>
+		<key>find every item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			repeat with i in every %@
+				set foundItems to foundItems &amp; (%@)
+			end repeat
+		end tell
+	end timeout
+	
+	return foundItems
+end run</string>
+		<key>find items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			set foundItems to foundItems &amp; (%@)
+		end tell
+	end timeout
+
+	return foundItems
+end run</string>
+		<key>get selected items</key>
+		<string>on run {input, parameters}
+	
+	set output to {}
+	set currentSelection to {}
+	
+	tell application &quot;iPhoto&quot;
+		set currentSelection to selection
+	end tell
+	set output to (input &amp; currentSelection)
+	
+	return output
+end run</string>
+	</dict>
+	<key>AMApplication</key>
+	<string>iPhoto</string>
+	<key>AMDefinedActions</key>
+	<dict>
+		<key>AMElements</key>
+		<array>
+			<dict>
+				<key>AMContainer</key>
+				<string>album</string>
+				<key>AMElements</key>
+				<array>
+					<string>keyword</string>
+				</array>
+				<key>AMName</key>
+				<string>photo</string>
+				<key>AMPluralName</key>
+				<string>photos</string>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.iphoto.photo-object</string>
+					</array>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.iphoto.photo-object</string>
+					</array>
+				</dict>
+				<key>AMProperties</key>
+				<array>
+					<dict>
+						<key>AMName</key>
+						<string>album</string>
+						<key>AMType</key>
+						<string>container</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>name</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>image filename</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>image path</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>date</string>
+						<key>AMType</key>
+						<string>date</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>title</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>height</string>
+						<key>AMType</key>
+						<string>number</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>thumbnail path</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>thumbnail filename</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>comment</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+					<dict>
+						<key>AMName</key>
+						<string>width</string>
+						<key>AMType</key>
+						<string>number</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>AMContainer</key>
+				<string>application</string>
+				<key>AMElements</key>
+				<array>
+					<string>photo</string>
+					<string>keyword</string>
+				</array>
+				<key>AMName</key>
+				<string>album</string>
+				<key>AMPluralName</key>
+				<string>albums</string>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.iphoto.album-object</string>
+					</array>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.iphoto.album-object</string>
+					</array>
+				</dict>
+				<key>AMProperties</key>
+				<array>
+					<dict>
+						<key>AMName</key>
+						<string>name</string>
+						<key>AMType</key>
+						<string>string</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>AMFilterItemsAction</key>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Filter_iPhoto_Items_2</string>
+			</array>
+			<key>AMKeywords</key>
+			<array>
+				<string>Find</string>
+				<string>Get</string>
+				<string>Photo</string>
+				<string>Image</string>
+				<string>Picture</string>
+				<string>Slideshow</string>
+			</array>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.iphoto.item-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.iphoto.item-object</string>
+				</array>
+			</dict>
+			<key>AMRequiredResources</key>
+			<array>
+				<dict>
+					<key>Display Name</key>
+					<string>iPhoto</string>
+					<key>Resource</key>
+					<string>com.apple.iPhoto</string>
+					<key>Type</key>
+					<string>application</string>
+					<key>Version</key>
+					<string>4</string>
+				</dict>
+			</array>
+			<key>AMCategory</key>
+			<string>AMCategoryPhotos</string>
+			<key>AMActionVersion</key>
+			<string>1.0</string>
+		</dict>
+		<key>AMFindItemsAction</key>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Find_iPhoto_Items_2</string>
+			</array>
+			<key>AMKeywords</key>
+			<array>
+				<string>Find</string>
+				<string>Get</string>
+				<string>Photo</string>
+				<string>Image</string>
+				<string>Picture</string>
+				<string>Slideshow</string>
+			</array>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.iphoto.item-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.iphoto.item-object</string>
+				</array>
+			</dict>
+			<key>AMRequiredResources</key>
+			<array>
+				<dict>
+					<key>Display Name</key>
+					<string>iPhoto</string>
+					<key>Resource</key>
+					<string>com.apple.iPhoto</string>
+					<key>Type</key>
+					<string>application</string>
+					<key>Version</key>
+					<string>4</string>
+				</dict>
+			</array>
+			<key>AMCategory</key>
+			<string>AMCategoryPhotos</string>
+			<key>AMActionVersion</key>
+			<string>1.1</string>
+		</dict>
+		<key>AMGetSelectedItemsAction</key>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Get_Selected_iPhoto_Items_2</string>
+			</array>
+			<key>AMKeywords</key>
+			<array>
+				<string>Find</string>
+				<string>Get</string>
+				<string>Photo</string>
+				<string>Image</string>
+				<string>Picture</string>
+				<string>Slideshow</string>
+			</array>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.iphoto.item-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.iphoto.item-object</string>
+				</array>
+			</dict>
+			<key>AMRequiredResources</key>
+			<array>
+				<dict>
+					<key>Display Name</key>
+					<string>iPhoto</string>
+					<key>Resource</key>
+					<string>com.apple.iPhoto</string>
+					<key>Type</key>
+					<string>application</string>
+					<key>Version</key>
+					<string>4</string>
+				</dict>
+			</array>
+			<key>AMCategory</key>
+			<string>AMCategoryPhotos</string>
+			<key>AMActionVersion</key>
+			<string>1.1</string>
+		</dict>
+	</dict>
+	<key>AMDocumentVersion</key>
+	<string>2.0</string>
+	<key>AMIcon</key>
+	<string>iPhoto</string>
+</dict>
+</plist>

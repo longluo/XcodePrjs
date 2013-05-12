@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Finder</string>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryFilesAndFolders</string>
+	<key>AMDReplacementActions</key>
+	<array>
+		<string>com.apple.Automator.Filter_Finder_Items_2</string>
+	</array>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>comparisonOperator</key>
+		<string>contains</string>
+		<key>comparisonProperty</key>
+		<string>name</string>
+		<key>comparisonValue</key>
+		<string></string>
+	</dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDSummary</key>
+		<string>This action determines if the selected items meet the specified criteria.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Finder</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Filter</string>
+		<string>File</string>
+		<string>Folder</string>
+		<string>Kind</string>
+		<string>Type</string>
+		<string>Name</string>
+		<string>Extension</string>
+	</array>
+	<key>AMName</key>
+	<string>Filter Finder Items</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+		</array>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Filter Finder Items</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.FilterFinderItems</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Filter Finder Items</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.3</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>FilterFinderItemsAction</string>
+</dict>
+</plist>

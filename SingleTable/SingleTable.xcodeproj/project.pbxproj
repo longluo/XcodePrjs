@@ -28,6 +28,7 @@
 		4F710A6E1700B12A00A6B9FF /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */; };
 		4F710A6F1700B12A00A6B9FF /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */; };
 		4FC63036173F52B100663A3A /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FC63035173F52B100663A3A /* recipes.plist */; };
+		4FC63038173F5AD900663A3A /* Microsoft Yahei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FC63037173F5AD900663A3A /* Microsoft Yahei.ttf */; };
 		4FE4C36616FF664D00763D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36516FF664D00763D2C /* UIKit.framework */; };
 		4FE4C36816FF664D00763D2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36716FF664D00763D2C /* Foundation.framework */; };
 		4FE4C36A16FF664D00763D2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36916FF664D00763D2C /* CoreGraphics.framework */; };
@@ -65,6 +66,7 @@
 		4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
 		4FC63035173F52B100663A3A /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		4FC63037173F5AD900663A3A /* Microsoft Yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Microsoft Yahei.ttf"; sourceTree = "<group>"; };
 		4FE4C36216FF664D00763D2C /* SingleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE4C36516FF664D00763D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FE4C36716FF664D00763D2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +167,7 @@
 		4FE4C36C16FF664D00763D2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FC63037173F5AD900663A3A /* Microsoft Yahei.ttf */,
 				4FE4C36D16FF664D00763D2C /* SingleTable-Info.plist */,
 				4FE4C36E16FF664D00763D2C /* InfoPlist.strings */,
 				4FE4C37116FF664D00763D2C /* main.m */,
@@ -254,6 +257,7 @@
 				4F1A216B170EF3230077C43B /* Default.png in Resources */,
 				4F1A216D170EF34F0077C43B /* Default@2x.png in Resources */,
 				4FC63036173F52B100663A3A /* recipes.plist in Resources */,
+				4FC63038173F5AD900663A3A /* Microsoft Yahei.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

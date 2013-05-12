@@ -1,0 +1,62 @@
+//	File: avfBase.xcconfig
+// 
+//	$Log$ 
+//	19jan2012 kcalhoun
+//	[9714208] Stop bugs before they happen by turning on GCC_WARN_SHADOW. <sonnanst, elee>
+//
+//	04jan2012 elee
+//	[10385964] Switch to libc++ and use an unexport list to strip out std::map weak exports. <jsam, kcalhoun, douglas_scott>
+//
+//	31oct2011 jalliot
+//	Back out previous change since it's breaking the simulator build. <elee>
+//
+//	28oct2011 elee
+//	Fix verification error: do not export STL template instances. <jalliot>
+//
+//	16aug2011 elee
+//	[9837672] Switch to LLVM+Clang, unless we're compiling on iOS5.0. <jsam, jalliot>
+// 
+//	03mar2011 elee
+//	Back out last change. <jim>
+//
+//	03mar2011 elee
+//	Must explicitly specify SYMROOT and OBJROOT or Xcode4 will put them in some random place. <jim>
+//
+//	27apr2010 kcalhoun
+//	8204506 Add warning for missing parentheses to catch '=' vs '==' ambiguities <jim>
+//
+//	27apr2010 ABB
+//	7913679 Define AVF_BASE_CFLAGS <jim>
+//
+//	24apr2010 jim
+//	clean up xcconfig files <jeremyj, nikhil>
+//
+//	18apr2010 jim
+//	first time. <abb>
+// 
+
+XCCONFIG_AVF_BASE = INCLUDED
+
+PREBINDING = NO
+
+GCC_C_LANGUAGE_STANDARD = c99
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_ABOUT_MISSING_NEWLINE = YES
+GCC_WARN_UNUSED_VARIABLE = YES
+GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES
+GCC_WARN_MISSING_PARENTHESES = YES
+GCC_WARN_SHADOW = YES
+GCC_PRECOMPILE_PREFIX_HEADER = NO
+GCC_ENABLE_FIX_AND_CONTINUE = NO
+
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+GCC_VERSION[sdk=iphoneos5.0.internal] = com.apple.compilers.llvmgcc42;
+GCC_VERSION[sdk=iphoneos5.0] = com.apple.compilers.llvmgcc42;
+
+ALWAYS_SEARCH_USER_PATHS = NO
+
+RC_ProjectSourceVersion = EngineeringBuild-$(USER)
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+AVF_BASE_CFLAGS = -stdlib=libc++

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>boolean</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>is</string>
+			<key>qualifier</key>
+			<string>(%@ = '%@'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not</string>
+			<key>qualifier</key>
+			<string>(%@ != '%@'cd)</string>
+		</dict>
+	</array>
+	<key>date</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>any date</string>
+			<key>qualifier</key>
+			<string>(%@ &gt;= 0)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>today</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>since yesterday</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.yesterday)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>next week</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today(+7))</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this week</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today(-7))</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>within last 2 weeks</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today(-14))</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>next month</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today(+31))</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>this month</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today(-31))</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>within last 2 months</string>
+			<key>qualifier</key>
+			<string>(%@ >= $time.today(-61))</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is equal to</string>
+			<key>qualifier</key>
+			<string>(%@ &gt;= %@ &amp;&amp; %@ &lt;= %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>before</string>
+			<key>qualifier</key>
+			<string>(%@ &lt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>after</string>
+			<key>qualifier</key>
+			<string>(%@ &gt; %@)</string>
+		</dict>
+	</array>
+	<key>enumeration</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>is</string>
+			<key>qualifier</key>
+			<string>(%@ = '%@'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not</string>
+			<key>qualifier</key>
+			<string>(%@ != '%@'cd)</string>
+		</dict>
+	</array>
+	<key>number</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>is equal to</string>
+			<key>qualifier</key>
+			<string>(%@ = %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not equal to</string>
+			<key>qualifier</key>
+			<string>(%@ != %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is less than</string>
+			<key>qualifier</key>
+			<string>(%@ &lt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not less than</string>
+			<key>qualifier</key>
+			<string>!(%@ &lt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is less than or equal to</string>
+			<key>qualifier</key>
+			<string>(%@ &lt;= %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is greater than</string>
+			<key>qualifier</key>
+			<string>(%@ &gt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not greater than</string>
+			<key>qualifier</key>
+			<string>!(%@ &gt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is greater than or equal to</string>
+			<key>qualifier</key>
+			<string>(%@ &gt;= %@)</string>
+		</dict>
+	</array>
+	<key>data size</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>is equal to</string>
+			<key>qualifier</key>
+			<string>(%@ = %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not equal to</string>
+			<key>qualifier</key>
+			<string>(%@ != %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is less than</string>
+			<key>qualifier</key>
+			<string>(%@ &lt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not less than</string>
+			<key>qualifier</key>
+			<string>!(%@ &lt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is less than or equal to</string>
+			<key>qualifier</key>
+			<string>(%@ &lt;= %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is greater than</string>
+			<key>qualifier</key>
+			<string>(%@ &gt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not greater than</string>
+			<key>qualifier</key>
+			<string>!(%@ &gt; %@)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is greater than or equal to</string>
+			<key>qualifier</key>
+			<string>(%@ &gt;= %@)</string>
+		</dict>
+	</array>
+	<key>string</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>is equal to</string>
+			<key>qualifier</key>
+			<string>(%@ = '%@'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not equal to</string>
+			<key>qualifier</key>
+			<string>(%@ != '%@'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>contains</string>
+			<key>qualifier</key>
+			<string>(%@ = '*%@*'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>does not contain</string>
+			<key>qualifier</key>
+			<string>(%@ != '*%@*'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>begins with</string>
+			<key>qualifier</key>
+			<string>(%@ = '%@*'cd)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ends with</string>
+			<key>qualifier</key>
+			<string>(%@ = '*%@'cd)</string>
+		</dict>
+	</array>
+	<key>extension</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>is equal to</string>
+			<key>qualifier</key>
+			<string>(%@ = '*.%@'c)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>is not equal to</string>
+			<key>qualifier</key>
+			<string>(%@ != '*.%@'c)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>contains</string>
+			<key>qualifier</key>
+			<string>(%@ = '*.*%@*'c)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>does not contain</string>
+			<key>qualifier</key>
+			<string>(%@ != '*.*%@*'c)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>begins with</string>
+			<key>qualifier</key>
+			<string>(%@ = '*.%@*'c)</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ends with</string>
+			<key>qualifier</key>
+			<string>(%@ = '*.*%@'c)</string>
+		</dict>
+	</array>
+</dict>
+</plist>

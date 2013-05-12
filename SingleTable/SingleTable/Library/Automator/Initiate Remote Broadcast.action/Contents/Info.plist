@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.text-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>QuickTime Broadcaster</string>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>autoBroadcast</key>
+		<true/>
+		<key>identifyMethod</key>
+		<integer>0</integer>
+		<key>localFilename</key>
+		<string>broadcast.qtbr</string>
+		<key>remoteIP</key>
+		<string>128.0.0.0</string>
+	</dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDSummary</key>
+		<string>This action creates a QuickTime Broadcaster settings file to a remote computer, and starts broadcasting with the remote copy of QuickTime Broadcaster.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>QTBroadcaster</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Broadcast</string>
+		<string>Remote</string>
+		<string>Movie</string>
+		<string>Start</string>
+		<string>Web</string>
+	</array>
+	<key>AMName</key>
+	<string>Initiate Remote Broadcast</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.text-object</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>QuickTime Broadcaster</string>
+			<key>Resource</key>
+			<string>com.apple.QuickTime Broadcaster</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>1.0.0</string>
+		</dict>
+	</array>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string>(* Action bundle to be suggested to add prior to this action to make the task safer, e.g. com.apple.Automator.CopyFiles, goes here. *)</string>
+		<key>ApplyButton</key>
+		<string>(* Button label for user to add proposed Action, e.g. Add. *)</string>
+		<key>IgnoreButton</key>
+		<string>(* Button label for user not to add proposed Action, e.g. Don't Add. *)</string>
+		<key>Level</key>
+		<integer>0</integer>
+		<key>Message</key>
+		<string>(* Warning message presented to user goes here. *)</string>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>11A455</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Initiate Remote Broadcast</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Initiate Remote Broadcast version 1.0, Copyright © 2004-2011 Apple Inc.  All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.InitiateRemoteBroadcast</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Initiate Remote Broadcast</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>10M2518</string>
+	<key>DTPlatformVersion</key>
+	<string>PG</string>
+	<key>DTSDKBuild</key>
+	<string>11A455</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0400</string>
+	<key>DTXcodeBuild</key>
+	<string>10M2518</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2011 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMAppleScriptAction</string>
+</dict>
+</plist>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>iTunes</string>
+	<key>AMCategory</key>
+	<string>AMCategoryMusic</string>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>Plays the currently selected song or a song passed in from the previous action.</string>
+		<key>AMDSummary</key>
+		<string>This action begins playing songs in iTunes.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>iTunes</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Start</string>
+		<string>Play</string>
+		<string>Track</string>
+		<string>Song</string>
+		<string>Music</string>
+	</array>
+	<key>AMName</key>
+	<string>Start iTunes Playing</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.object</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>iTunes</string>
+			<key>Resource</key>
+			<string>com.apple.iTunes</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.6</string>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Start iTunes Playing</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.StartiTunesPlaying</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Start iTunes Playing</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMStartiTunesPlayingAction</string>
+</dict>
+</plist>

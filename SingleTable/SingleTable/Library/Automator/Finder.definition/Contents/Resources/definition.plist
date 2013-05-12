@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+		</array>
+	</dict>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+		</array>
+	</dict>
+	<key>Specific Keywords</key>
+	<array>
+		<string>Find</string>
+		<string>Get</string>
+		<string>Disk</string>
+		<string>File</string>
+		<string>Folder</string>
+		<string>Document</string>
+		<string>Archive</string>
+	</array>
+	<key>application</key>
+	<string>Finder</string>
+	<key>AMCategory</key>
+	<string>AMCategoryFilesAndFolders</string>
+	<key>defined_types</key>
+	<dict>
+		<key>com.apple.applescript.alias-object</key>
+		<dict>
+			<key>name</key>
+			<string>Files/Folders</string>
+		</dict>
+	</dict>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>disk</string>
+			<key>plural name</key>
+			<string>disks</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>modification date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creation date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>kind</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>label index</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name extension</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>file type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creator type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>folder</string>
+			<key>plural name</key>
+			<string>folders</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>modification date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creation date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>kind</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>label index</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name extension</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>file type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creator type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>file</string>
+			<key>plural name</key>
+			<string>files</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>modification date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creation date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>kind</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>label index</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name extension</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>file type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creator type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>item</string>
+			<key>plural name</key>
+			<string>items</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>modification date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creation date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>kind</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>label index</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name extension</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>file type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>creator type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>iconName</key>
+	<string>Finder</string>
+	<key>scripts</key>
+	<dict>
+		<key>get selected items</key>
+		<string>on run {input, parameters}
+		
+		set output to input
+		set currentSelection to missing value
+
+		tell application &quot;Finder&quot;
+			set currentSelection to selection
+			
+			repeat with i from 1 to count of currentSelection
+				set theItem to item i of currentSelection
+				copy (theItem as alias) to end of output
+			end repeat
+			
+		end tell
+
+		return output
+end run
+</string>
+	</dict>
+	<key>supported generic actions</key>
+	<array>
+		<dict>
+			<key>Class</key>
+			<string>GetSelectedItemsAction</string>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Get_Selected_Finder_Items_2</string>
+			</array>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

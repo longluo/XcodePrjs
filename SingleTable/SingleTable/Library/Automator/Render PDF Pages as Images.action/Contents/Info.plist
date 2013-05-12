@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.pdf</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<array>
+		<string>PDF</string>
+	</array>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryPDFs</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>colorModel</key>
+		<integer>0</integer>
+		<key>compression</key>
+		<real>0.5</real>
+		<key>imageFormat</key>
+		<string>public.jpeg</string>
+		<key>resolution</key>
+		<integer>200</integer>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDAlert</key>
+		<string></string>
+		<key>AMDInput</key>
+		<string></string>
+		<key>AMDNote</key>
+		<string>As the names of the resulting images are randomly generated, this action is often followed by the Rename Finder Items &gt; Make Sequential action.</string>
+		<key>AMDOptions</key>
+		<string>Image format, color model, resolution, and compression</string>
+		<key>AMDRelatedActions</key>
+		<string>com.apple.Automator.AddNumbersToFinderNames</string>
+		<key>AMDRequires</key>
+		<string></string>
+		<key>AMDResult</key>
+		<string>References to the rendered image files.</string>
+		<key>AMDSummary</key>
+		<string>This action will render each page of the passed PDF documents as images.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Preview</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Print</string>
+		<string>Render</string>
+	</array>
+	<key>AMName</key>
+	<string>Render PDF Pages as Images</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.image</string>
+		</array>
+	</dict>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string>(* Action name to be suggested to add prior to this action to make the task safer, e.g. Copy Files, goes here. *)</string>
+		<key>ApplyButton</key>
+		<string>(* Button label for user to add proposed Action, e.g. Add. *)</string>
+		<key>IgnoreButton</key>
+		<string>(* Button label for user not to add proposed Action, e.g. Don't Add. *)</string>
+		<key>Level</key>
+		<integer>0</integer>
+		<key>Message</key>
+		<string>(* Warning message presented to user goes here. *)</string>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12D29</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Render PDF Pages as Images</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.action.imagepdf</string>
+	<key>CFBundleName</key>
+	<string>Render PDF Pages as Images</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.3</string>
+	<key>CFBundleVersion</key>
+	<string>409.2</string>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>4F250</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12D29</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F250</string>
+	<key>NSPrincipalClass</key>
+	<string>ImagePDFAction</string>
+</dict>
+</plist>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+			<string>com.apple.applescript.text-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Mail</string>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryMail</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>account</key>
+		<string>defaultAccount</string>
+		<key>bccAddresses</key>
+		<string></string>
+		<key>ccAddresses</key>
+		<string></string>
+		<key>message</key>
+		<string></string>
+		<key>subject</key>
+		<string></string>
+		<key>toAddresses</key>
+		<string></string>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>If text is received from a previous action, the text is appended to the message. If files are received from a previous action, the files are attached to the message.</string>
+		<key>AMDRelatedActions</key>
+		<array>
+			<string>com.apple.Automator.SendOutgoingMessages</string>
+		</array>
+		<key>AMDSummary</key>
+		<string>This action creates a new outgoing message in Mail.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Mail</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Create</string>
+		<string>Make</string>
+		<string>Message</string>
+		<string>Mail</string>
+		<string>New</string>
+		<string>Send</string>
+		<string>Address</string>
+		<string>Image</string>
+		<string>Photo</string>
+		<string>File</string>
+	</array>
+	<key>AMName</key>
+	<string>New Mail Message</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.mail.message-object</string>
+		</array>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>New Mail Message</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.CreateNewEmail</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.2.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2003-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMCreateNewEmailAction</string>
+</dict>
+</plist>

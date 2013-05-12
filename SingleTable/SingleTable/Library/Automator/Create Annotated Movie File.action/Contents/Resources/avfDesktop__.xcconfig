@@ -1,0 +1,30 @@
+//	File: avfDesktop__.xcconfig
+// 
+//	$Log$
+//  14dec2010 pietsch
+//  <rdar://problem/8379208> AVFoundation must verify MediaToolbox's code signature for HDCP reasons <elee>
+//
+//	27apr2010 ABB
+//	7913679 Define AVF_DESKTOP_CFLAGS <jim>
+//
+//	24apr2010 jim
+//	clean up xcconfig files <jeremyj, nikhil>
+//
+//	18apr2010 jim
+//	first time. <abb>
+// 
+
+XCCONFIG_AVF_DESKTOP___ = INCLUDED
+
+ARCHS = $(ARCHS_STANDARD_32_64_BIT)
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SYSTEM_LIBRARY_DIR)/Frameworks/CoreServices.framework/Frameworks" "$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks"
+
+GCC_MODEL_TUNING = G5
+GCC_ENABLE_OBJC_GC = supported
+
+// RC_XBS is set to "YES" for XBS-based builds (B&I and buildit), which will cause RC_XBS_YES=1 to be defined in XBS-based builds
+// RC_BUILDIT is set to "YES" for buildit builds, which will cause RC_BUILDIT_YES=1 to be defined in buildit builds
+// The two macros can then be used to enable code to only be built in B&I (such as code that verifies code signatures, which are
+// only generated for products built in B&I).
+AVF_DESKTOP_CFLAGS = -DRC_XBS_$(RC_XBS)=1 -DRC_BUILDIT_$(RC_BUILDIT)=1

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.calendar-store.event</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Calendar</string>
+	<key>AMCategory</key>
+	<string>AMCategoryCalendar</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>span</key>
+		<integer>0</integer>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDAlert</key>
+		<string>Calendar events are permanently deleted and the changes cannot be undone.</string>
+		<key>AMDInput</key>
+		<string>Calendar events received from a previous action</string>
+		<key>AMDResult</key>
+		<string>Specified events are deleted</string>
+		<key>AMDSummary</key>
+		<string>This action deletes Calendar events.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Calendar</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Delete</string>
+		<string>Calendar</string>
+		<string>Event</string>
+	</array>
+	<key>AMName</key>
+	<string>Delete Calendar Events</string>
+	<key>AMProvides</key>
+	<dict/>
+	<key>AMWarning</key>
+	<dict>
+		<key>Action</key>
+		<string></string>
+		<key>ApplyButton</key>
+		<string>Continue</string>
+		<key>IgnoreButton</key>
+		<string>Cancel</string>
+		<key>Level</key>
+		<integer>2</integer>
+		<key>Message</key>
+		<string>This action will remove all of the events that are passed to it. It cannot be undone.</string>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Delete Calendar Events</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.DeleteiCalEvents</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Delete Calendar Events</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.0.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMDeleteCalendarEventAction</string>
+</dict>
+</plist>

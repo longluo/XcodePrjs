@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.addressbook.item-object</string>
+			<string>com.apple.addressbook.person-object</string>
+			<string>com.apple.addressbook.group-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<array>
+		<string>Contacts</string>
+		<string>Mail</string>
+	</array>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<false/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<array>
+		<string>AMCategoryMail</string>
+		<string>AMCategoryContacts</string>
+	</array>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>includeGreeting</key>
+		<true/>
+		<key>recipientStyle</key>
+		<integer>0</integer>
+		<key>salutationText</key>
+		<string>Dear</string>
+		<key>sendMessages</key>
+		<false/>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDNote</key>
+		<string>The message copies are not sent by this action.</string>
+		<key>AMDRelatedActions</key>
+		<string>com.apple.Automator.SendOutgoingMessages</string>
+		<key>AMDRequires</key>
+		<string>An outgoing message open in Mail prepared with subject, content and any attachments</string>
+		<key>AMDSummary</key>
+		<string>This action creates a copy of the prepared Mail message for each of the passed in people.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Mail</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Message</string>
+		<string>Mail</string>
+		<string>Create</string>
+		<string>Make</string>
+		<string>Copy</string>
+		<string>Person</string>
+		<string>New</string>
+		<string>Address</string>
+		<string>Send</string>
+	</array>
+	<key>AMName</key>
+	<string>Group Mailer</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.mail.message-object</string>
+		</array>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Group Mailer</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.MassMailer</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMMassMailerAction</string>
+</dict>
+</plist>

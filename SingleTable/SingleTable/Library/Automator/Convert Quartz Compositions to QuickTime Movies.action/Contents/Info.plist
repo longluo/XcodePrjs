@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+		</array>
+	</dict>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<true/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>destinationPath</key>
+		<string></string>
+		<key>movieDuration</key>
+		<real>30</real>
+		<key>moviePixelsHigh</key>
+		<integer>480</integer>
+		<key>moviePixelsWide</key>
+		<integer>720</integer>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDNote</key>
+		<string>This action only accepts Quartz Compositions (.qtz) as input files.</string>
+		<key>AMDSummary</key>
+		<string>This action converts Quartz Composition files to QuickTime movies with specified duration and dimensions.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Quartz Composer Action</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Quartz Composer</string>
+		<string>Movie</string>
+	</array>
+	<key>AMName</key>
+	<string>Convert Quartz Compositions to QuickTime Movies</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.movie</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Convert Quartz Compositions to QuickTime Movies</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.QuartzComposer.automatorActions.movieExporter</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Convert Quartz Compositions to QuickTime Movies</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2</string>
+	<key>CFBundleVersion</key>
+	<string>8</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSPrincipalClass</key>
+	<string>QuartzComposerMovieExporter</string>
+</dict>
+</plist>

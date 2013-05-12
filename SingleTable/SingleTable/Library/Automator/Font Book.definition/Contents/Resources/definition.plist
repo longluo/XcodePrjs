@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMCategory</key>
+	<string>AMCategoryFonts</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.fontbook.typeface-object</string>
+		</array>
+	</dict>
+	<key>Specific Keywords</key>
+	<array>
+		<string>Font</string>
+		<string>Find</string>
+		<string>Get</string>
+		<string>File</string>
+		<string>Document</string>
+	</array>
+	<key>application</key>
+	<string>Font Book</string>
+	<key>defined_types</key>
+	<dict>
+		<key>com.apple.fontbook.font-collection-object</key>
+		<dict>
+			<key>name</key>
+			<string>Font Book font collection</string>
+		</dict>
+		<key>com.apple.fontbook.typeface-object</key>
+		<dict>
+			<key>name</key>
+			<string>Font Book typeface</string>
+		</dict>
+	</dict>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.fontbook.typeface-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.fontbook.typeface-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>typeface</string>
+			<key>plural name</key>
+			<string>typefaces</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>family name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>style name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>PostScript name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>ID</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>enabled</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>duplicated</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>font type</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>copyright</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.fontbook.font-collection-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.fontbook.font-collection-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>font collection</string>
+			<key>plural name</key>
+			<string>font collections</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>iconName</key>
+	<string>FontBook</string>
+	<key>library path</key>
+	<string>~/Library/Automator/Font Book</string>
+	<key>scripts</key>
+	<dict>
+		<key>filter items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to {}
+	set currentDate to date (date string of (current date))
+	
+	tell application "%@"
+		%@
+	end tell
+
+	return foundItems
+
+end run
+</string>
+		<key>find every item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to date (date string of (current date))
+	
+	tell application "%@"
+		repeat with i in every %@
+			set foundItems to foundItems &amp; (%@)
+		end repeat
+	end tell
+	
+	return foundItems
+end run</string>
+		<key>find items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to date (date string of (current date))
+	
+	tell application "%@"
+		set foundItems to foundItems &amp; (%@)
+	end tell
+
+	return foundItems
+
+end run
+</string>
+		<key>get selected items</key>
+		<string>on run {input, parameters}
+	
+	set currentSelection to missing value
+	
+	tell application "Font Book"
+		set currentSelection to selection
+	end tell
+	
+	return currentSelection  &amp;  input
+end run
+</string>
+	</dict>
+	<key>supported generic actions</key>
+	<array>
+		<string>GetSelectedItemsAction</string>
+		<string>FindItemsAction</string>
+		<string>FilterItemsAction</string>
+	</array>
+</dict>
+</plist>

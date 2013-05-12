@@ -1,0 +1,61 @@
+#!/usr/bin/perl
+
+# get file URLs to look for
+@fileURLsString = @ARGV;
+@fileURLArgs = split(/ /, $fileURLsString[0]);
+@fileURLs = ();
+foreach $fileURL (@fileURLArgs) {
+	$fileURL =~ s/\&/\&#38;/g;
+	push( @fileURLs, $fileURL );
+}
+
+%in_fileURLs = ();
+for( @fileURLs ) { $in_fileURLs{$_} = 1 }
+
+# get locations for iTunes DBs
+@dbPaths = ();
+$pathsString = `defaults read com.apple.iApps iTunesRecentDatabasePaths`;
+@dbPathPieces = split(/\n/, $pathsString);
+
+foreach $potentialPath (@dbPathPieces) {
+	next if( $potentialPath eq "(" || $potentialPath eq ")" );
+	if( $potentialPath =~ /^\s*/ ) { $potentialPath =~ s/^\s*//; }
+	push( @dbPaths, $potentialPath );
+}
+
+# expand tildes in paths
+@expandedDBPaths = ();
+foreach $path (@dbPaths) {
+	if( $path =~ /^\".*\"$/ ) {
+		$path =~ s/^\"//; $path =~ s/\"$//;
+	}
+
+	$path =~ s{ ^ ~ ( [^/]* ) }
+			  { $1 
+					? (getpwnam($1))[7] 
+					: ( $ENV{HOME} || $ENV{LOGDIR} || (getpwuid($>))[7] )
+			  }ex;
+	push( @expandedDBPaths, $path );
+}
+
+@trackIDs = ();
+foreach $path (@expandedDBPaths) {
+	chomp $path;
+	$trackID = ""; $location = "";
+
+	open( FILE, $path ) || die "Can't open file: $path\n";
+	while(<FILE>) {
+		if( $_ =~ /<key>Track ID<\/key><integer>(.*)<\/integer>/ ) { 
+			$trackID = $1; 
+		} elsif( $_ =~ /<key>Location<\/key><string>(.*)<\/string>/ ) { 
+			$location = $1;
+			if( $in_fileURLs{$location} ) {
+				push( @trackIDs, $trackID );
+				$trackID = ""; $location = "";	
+			}
+		}
+	}
+	close FILE;
+}
+
+print "$_\n" foreach @trackIDs;

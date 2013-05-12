@@ -1,0 +1,27 @@
+//	File: avf__Debug.xcconfig
+// 
+//	$Log$ 
+//	27apr2010 ABB
+//	7913679 Define AVF_DEBUG_CFLAGS <jim>
+//
+//	26apr2010 jim
+//	add preprocessor defs to control logging and experiments <abb>
+//
+//	24apr2010 jim
+//	clean up xcconfig files <jeremyj, nikhil>
+//
+//	18apr2010 jim
+//	first time. <abb>
+// 
+
+XCCONFIG_AVF____DEBUG = INCLUDED
+
+#include "avfBase.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS = FIG_DEBUG_LEVEL=FIG_DEBUG_LEVEL_INTERNAL_DEBUG FIG_DISABLE_ALL_LOGGING=0 FIG_DISABLE_ALL_EXPERIMENTS=0
+
+COPY_PHASE_STRIP = NO
+GCC_DYNAMIC_NO_PIC = NO
+GCC_OPTIMIZATION_LEVEL = 0
+
+AVF_DEBUG_CFLAGS = $(AVF_BASE_CFLAGS)

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.movie</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<array>
+		<string>Safari</string>
+		<string>QuickTime Player</string>
+	</array>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict/>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>Movie files passed in from the previous action.</string>
+		<key>AMDRequires</key>
+		<string>Movie files of type QuickTime (.mov or .qt), MPEG (.mpg or .mpeg or .mp4 or .m75 or .m15).</string>
+		<key>AMDSummary</key>
+		<string>This action displays the given movie files in Safari.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Safari</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Movie</string>
+		<string>Browse</string>
+		<string>Display</string>
+		<string>Show</string>
+	</array>
+	<key>AMName</key>
+	<string>Browse Movies</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.movie</string>
+		</array>
+	</dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Movie Browser</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Browse Movies version 1.0, Copyright © 2004-2009 Apple Inc.  All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.MovieBrowser</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2009 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMAppleScriptAction</string>
+</dict>
+</plist>

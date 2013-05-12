@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object</string>
+		</array>
+	</dict>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<true/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryPhotos</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>destinationPath</key>
+		<string></string>
+		<key>parameterKey1</key>
+		<string>parameterKey1</string>
+		<key>parameterKey2</key>
+		<string>parameterKey2</string>
+		<key>parameterKey3</key>
+		<string>parameterKey3</string>
+		<key>parameterKey4</key>
+		<string>parameterKey4</string>
+		<key>parameterKey5</key>
+		<string>parameterKey5</string>
+		<key>parameterValue1</key>
+		<string></string>
+		<key>parameterValue2</key>
+		<string></string>
+		<key>parameterValue3</key>
+		<string></string>
+		<key>parameterValue4</key>
+		<string></string>
+		<key>parameterValue5</key>
+		<string></string>
+		<key>renderPixelsHigh</key>
+		<integer>480</integer>
+		<key>renderPixelsWide</key>
+		<integer>640</integer>
+		<key>renderTime</key>
+		<real>0.0</real>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDNote</key>
+		<string>This action only accepts Quartz Compositions (.qtz) as input files.</string>
+		<key>AMDOptions</key>
+		<string>You can pass the values of up to 5 Automator variables to the Quartz Composition through its input parameters with keys "automatorVariable1" to "automatorVariable5".</string>
+		<key>AMDSummary</key>
+		<string>This action renders Quartz Composition files at specified frame time and dimensions to PNG image files.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Quartz Composer Action</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Quartz Composer</string>
+		<string>Image</string>
+	</array>
+	<key>AMName</key>
+	<string>Render Quartz Compositions to Image Files</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.image</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Render Quartz Compositions to Image Files</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.QuartzComposer.automatorActions.compositionRenderer</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Render Quartz Compositions to Image Files</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3</string>
+	<key>CFBundleVersion</key>
+	<string>14</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSPrincipalClass</key>
+	<string>QuartzComposerCompositionRenderer</string>
+</dict>
+</plist>

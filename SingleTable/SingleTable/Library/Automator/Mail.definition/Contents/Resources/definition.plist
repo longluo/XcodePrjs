@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.mail.item-object</string>
+		</array>
+	</dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.mail.item-object</string>
+		</array>
+	</dict>
+	<key>Specific Keywords</key>
+	<array>
+		<string>Find</string>
+		<string>Get</string>
+		<string>Mail</string>
+		<string>Message</string>
+		<string>Mailbox</string>
+	</array>
+	<key>application</key>
+	<string>Mail</string>
+	<key>AMCategory</key>
+	<string>AMCategoryMail</string>
+	<key>defined_types</key>
+	<dict>
+		<key>com.apple.mail.account-object</key>
+		<dict>
+			<key>name</key>
+			<string>Mail accounts</string>
+		</dict>
+		<key>com.apple.mail.item-object</key>
+		<dict>
+			<key>name</key>
+			<string>Mail items</string>
+		</dict>
+		<key>com.apple.mail.mailbox-object</key>
+		<dict>
+			<key>name</key>
+			<string>Mail mailboxes</string>
+		</dict>
+		<key>com.apple.mail.message-object</key>
+		<dict>
+			<key>name</key>
+			<string>Mail messages</string>
+		</dict>
+	</dict>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.mail.account-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.mail.account-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>application</string>
+			<key>elements</key>
+			<array>
+				<string>mailbox</string>
+			</array>
+			<key>name</key>
+			<string>account</string>
+			<key>plural name</key>
+			<string>accounts</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>enabled</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>user name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>server name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>enumeration</key>
+					<array>
+						<string>imap</string>
+						<string>pop</string>
+						<string>smtp</string>
+						<string>Mac</string>
+					</array>
+					<key>name</key>
+					<string>account type</string>
+					<key>type</key>
+					<string>enumeration</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.mail.mailbox-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.mail.mailbox-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>account</string>
+			<key>elements</key>
+			<array>
+				<string>message</string>
+				<string>mailbox</string>
+			</array>
+			<key>name</key>
+			<string>mailbox</string>
+			<key>plural name</key>
+			<string>mailboxes</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>account</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>unread count</string>
+					<key>type</key>
+					<string>number</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.mail.message-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.mail.message-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>mailbox</string>
+			<key>elements</key>
+			<array>
+				<string>to recipient</string>
+				<string>bcc recipient</string>
+				<string>cc recipient</string>
+				<string>recipient</string>
+				<string>header</string>
+			</array>
+			<key>name</key>
+			<string>message</string>
+			<key>plural name</key>
+			<string>messages</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>mailbox</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>content</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>date received</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>date sent</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>deleted status</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>flagged status</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>junk mail status</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>read status</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>reply to</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>message size</string>
+					<key>type</key>
+					<string>data size</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>sender</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>subject</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>was forwarded</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>was redirected</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>was replied to</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>iconName</key>
+	<string>Mail</string>
+	<key>scripts</key>
+	<dict>
+		<key>filter items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to {}
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			%@
+		end tell
+	end timeout
+
+	return foundItems
+end run
+</string>
+		<key>find every item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			repeat with i in every %@
+				set foundItems to foundItems &amp; (%@)
+			end repeat
+		end tell
+	end timeout
+	
+	return foundItems
+end run</string>
+		<key>find every message item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			repeat with j in every account
+				repeat with i in every %@ of j
+					set foundItems to foundItems &amp; (%@)
+				end repeat
+			end repeat
+		end tell
+	end timeout
+	
+	return foundItems
+end run</string>
+		<key>find items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			set foundItems to foundItems &amp; (%@)
+		end tell
+	end timeout
+
+	return foundItems
+end run
+</string>
+		<key>get selected items</key>
+		<string>on run {input, parameters}
+	set output to {}
+	set currentSelection to {}
+	
+	tell application &quot;Mail&quot;
+		set currentSelection to selection
+	end tell
+	set output to (input &amp; currentSelection)
+	return output
+end run</string>
+	</dict>
+	<key>supported generic actions</key>
+	<array>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Get_Selected_Mail_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>GetSelectedItemsAction</string>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>FindItemsAction</string>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Find_Mail_Items_2</string>
+			</array>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Filter_Mail_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FilterItemsAction</string>
+			<key>Version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

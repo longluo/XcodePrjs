@@ -1,0 +1,248 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Getopt::Std;
+
+our $opt_a = 0;
+our $opt_i = 0;
+our $opt_l = 0;
+our $opt_m = 0;
+our $opt_R = 0;
+our $opt_u = 0;
+our $opt_v = 0;
+
+
+### Uniquing functions.  Unlike uniq(1), these do not care if the input is sorted first.
+
+sub unique(@)
+	# Eliminates redundant values.
+{
+	my %count;
+
+	++$count{$_} foreach (@_);
+	return keys %count;
+}
+
+sub distinct(@)
+	# Eliminates values mentioned more than once.
+{
+	my %count;
+
+	++$count{$_} foreach (@_);
+	return grep { $count{$_} == 1 } keys %count;
+}
+
+
+### Composing, decomposing, inspecting, and otherwise munging urls.
+
+sub decompose_url($)
+{
+	my $scheme =   $_[0] =~ m{^([^:]+):} ? $1 : "";
+	my $host =     $_[0] =~ m{^$scheme:/[^/]*/([^/]+)} ? $1 : "";
+	my $domain =   $host =~ m{([^.]+\.[^.]+)$} ? $1 : "";
+	my $path =     $_[0] =~ m{^(?:$scheme:/[^/]*/$host/)?(.*)} ? $1 : "";
+	my $dirname =  $path =~ m{(.*)/[^/]*$} ? $1 : "";
+	my $basename = $path =~ m{([^/]+)$} ? $1 : "";
+
+	return ($scheme, $host, $domain, $path, $dirname, $basename);
+}
+
+sub complete_url($$)
+{
+	my $url = shift;
+	my $href = shift;
+	my ($scheme, $host, $dirname) = (decompose_url($url))[0, 1, 4];
+	my $root = "$scheme://$host";
+	my $base = $dirname ? ($dirname =~ m{^/} ? "$root$dirname/" : "$root/$dirname/") : "$root/";
+	local $_ = $href;
+
+	my $furl = m{^[a-z]+:}
+		? $_ # fully qualified url, return as is.
+		: m{^/}
+			? $root.$_	# absolute to base.
+			: $base.$_	# relative to base.
+	;
+
+	while ($furl =~ m{/\./}) { $furl =~ s{/\./}{/}; }
+	while ($furl =~ m{/[^/]+/\.\./}) { $furl =~ s{/[^/]+/\.\./}{/}; }
+
+	return $furl;
+}
+
+sub domain($)
+{ return (decompose_url($_[0]))[2]; }
+
+sub is_local($$)
+{
+	return 1 if !$opt_l;
+	my $d = domain($_[0]);
+	my $result = !$d || $d eq $_[1];
+	print STDERR "$0: ignoring $_ (not local).\n" if ($opt_v && !$result);
+	return $result;
+}
+
+sub is_image($)
+{ return $_[0] =~ m/\.(gif|jpe?g|png|tiff?)$/i; }
+
+sub is_html($)
+{
+	return 1 if ($opt_a);
+
+	my ($scheme, $dirname, $basename) = (decompose_url($_[0]))[0, 4, 5];
+
+	if ($opt_v) {
+		if ($scheme && $scheme ne 'http')
+			{ print STDERR "$0: ignoring href $_[0] (not http).\n"; }
+		elsif (!$dirname && !$basename)
+			{ print STDERR "$0: ignoring href $_[0] (top-level page).\n"; }
+	}
+	return 0 if $scheme && $scheme ne 'http';	# no: explicit scheme that's not http.
+	return 0 if !$dirname && !$basename;		# no: looks like a top-level page.
+	return 1 if !$basename;						# yes: trivial basename.
+	return 1 if $basename =~ m/\.html?$/i;		# yes: has HTML extension.
+	return 1 if $basename =~ m/^[^.]+$/;		# yes: no extension.
+	return 1 if $basename =~ /\?/;				# yes: looks like a query.
+	return 1 if $basename =~ /\.(php3?)$/i;		# yes: looks like a CGI.
+
+	if ($opt_v) {
+		print STDERR "$0: ignoring href $_[0] (not HTML).\n";
+	}
+	return 0;
+}
+
+
+### A very trimmed-down curl(1) as a function.
+
+sub curl($;$;$)
+{
+	my $url = shift;
+	my $required = shift;
+	my $strip = shift;
+	my $data = `curl -LisS "$url"`;
+	exit 1 if $required && $?;
+	if ($data =~ m/^HTTP\/([0-9.]+) (\d+) (.*)/ && $2 >= 400) {
+		if ($required) {
+			print STDERR "request for $url failed: $2 $3\n";
+			exit 1;
+		}
+		else {
+			$data = "";
+		}
+	}
+	$data = strip($data) if $strip;
+	return $data;
+}
+
+sub strip($)
+{
+	my $html = shift;
+	$html =~ s/<!--.*?-->//sg;
+	$html =~ s{<script[^>]*>.*?</script>}{}isg;
+	return $html;
+}
+
+
+### Sniffing tags out of HTML.
+
+sub tags($)
+{
+	return ( $_[0] =~ m{<[^/][^>]+>}sg ); # this skips end tags.
+}
+
+sub imgs($)
+{
+	return ($_[0] =~ m{<img[^>]*>}isg);
+}
+
+sub hrefs($;$)
+{
+	my $html = shift; my $thumbnails_only = shift;
+	my @result;
+
+	foreach ($html =~ m{(<(?:a|area)[^>]*>.*?</a>)}isg)
+	{
+		if ($thumbnails_only) {
+			next if !m{^<[^>]*>\s*(<img\b[^>]*>)\s*</a>$}is;
+			if (!$opt_a) {
+				# Don't follow tiny images -- they're probably navigation links.
+				my $w = attribute($1, "width"); next if $w && $w <= 48;
+				my $h = attribute($1, "height"); next if $h && $h <= 48;
+			}
+		}
+		push @result, $1 if m{\bhref=["']?([^ "'>]*)"?}is;
+	}
+	return @result;
+}
+
+sub attribute($$)
+{ return $_[0] =~ m/\b$_[1]=["']?([^ >"']+)"?/i ? $1 : ""; }
+
+
+### The top-level bits.
+
+sub images($$;$;$)
+{
+	my $url = shift;
+	my $domain = shift;
+	my $required = shift;
+	my $source = shift;
+	$source = strip($source);
+	print STDERR "$0: checking page $url\n" if ($opt_v);
+	return
+		map complete_url($url, $_),
+		grep is_local($_, $domain),
+		map attribute($_, 'src'),
+		imgs $source;
+}
+
+getopts('ailmRuv');
+
+my ($B, $data) = @ARGV;
+my $D = domain($B);
+
+if (!$opt_R)
+{
+	# images on this page only.
+	if( !$data ) {
+		$data = curl($B, 1, 1);
+	}
+
+	my @images = images($B, $D, 1, $data);
+	@images = distinct @images if $opt_u;
+	print "$_\n" foreach @images;
+}
+else
+{
+	# get linked images and images on sub-pages.
+	if( !$data ) {
+		$data = curl($B, 1);
+	}
+
+	if ($opt_m && $B =~ m|/homepage.mac.com/| && $data =~ /new Slide\(/)
+	{
+		# special case for .Mac slideshow pages.  DON'T strip comments first; .Mac puts the script inside an HTML comment.
+		my @urls = $data =~ /new Slide\('([^'\\]*(?:\\.[^'\\]*)*)'/g;
+		map s/\\(.)/$1/g, @urls;
+		print "$_\n" foreach @urls;
+	}
+	else
+	{
+		# Just a regular page...
+
+		$data = strip($data);
+
+		my @images = map complete_url($B, $_), grep is_local($_, $D), grep is_image($_), hrefs($data);
+		if (@images) {
+			# if we find any direct image links, we're done.
+			print "$_\n" foreach $opt_u ? unique @images : @images;
+		}
+		else {
+			# otherwise, scan for images on sub-pages.
+			my @pages = map complete_url($B, $_), grep is_html($_), hrefs($data, $opt_i);
+			my @subimages;
+			push @subimages, images($_, $D) foreach (grep is_local($_, $D), unique @pages);
+
+			print "$_\n" foreach $opt_u ? distinct @subimages : @subimages;
+		}
+	}
+}

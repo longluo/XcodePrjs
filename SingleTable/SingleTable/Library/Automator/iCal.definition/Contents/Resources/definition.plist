@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.ical.item-object</string>
+		</array>
+	</dict>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.ical.item-object</string>
+		</array>
+	</dict>
+	<key>Specific Keywords</key>
+	<array>
+		<string>Find</string>
+		<string>Get</string>
+		<string>Calendar</string>
+		<string>Birthday</string>
+		<string>Event</string>
+		<string>Reminder</string>
+		<string>Reminder</string>
+	</array>
+	<key>application</key>
+	<string>Calendar</string>
+	<key>AMCategory</key>
+	<string>AMCategoryCalendar</string>
+	<key>defined_types</key>
+	<dict>
+		<key>com.apple.ical.calendar-object</key>
+		<dict>
+			<key>name</key>
+			<string>Calendar calendars</string>
+		</dict>
+		<key>com.apple.ical.event-object</key>
+		<dict>
+			<key>name</key>
+			<string>Calendar events</string>
+		</dict>
+		<key>com.apple.ical.item-object</key>
+		<dict>
+			<key>name</key>
+			<string>Calendar items</string>
+		</dict>
+		<key>com.apple.ical.todo-object</key>
+		<dict>
+			<key>name</key>
+			<string>Reminders</string>
+		</dict>
+	</dict>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.ical.calendar-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.ical.calendar-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>calendar</string>
+			<key>plural name</key>
+			<string>calendars</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>description</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.ical.event-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.ical.event-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>calendar</string>
+			<key>name</key>
+			<string>event</string>
+			<key>plural name</key>
+			<string>events</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>calendar</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>summary</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>description</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>start date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>end date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>stamp date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>allday event</string>
+					<key>type</key>
+					<string>boolean</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>recurrence</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>enumeration</key>
+					<array>
+						<string>none</string>
+						<string>cancelled</string>
+						<string>confirmed</string>
+						<string>tentative</string>
+					</array>
+					<key>name</key>
+					<string>status</string>
+					<key>type</key>
+					<string>enumeration</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>location</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>url</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.ical.todo-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.ical.todo-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>calendar</string>
+			<key>name</key>
+			<string>reminder</string>
+			<key>plural name</key>
+			<string>reminders</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>calendar</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>summary</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>description</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>enumeration</key>
+					<array>
+						<string>no priority</string>
+						<string>low priority</string>
+						<string>medium priority</string>
+						<string>high priority</string>
+					</array>
+					<key>name</key>
+					<string>priority</string>
+					<key>type</key>
+					<string>enumeration</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>completion date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>due date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>stamp date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>url</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>iconName</key>
+	<string>Calendar</string>
+	<key>scripts</key>
+	<dict>
+		<key>filter items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to {}
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			%@
+		end tell
+	end timeout
+
+	return foundItems
+end run
+</string>
+		<key>find every item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			repeat with i in every %@
+				set foundItems to foundItems &amp; (%@)
+			end repeat
+		end tell
+	end timeout
+	
+	return foundItems
+end run</string>
+		<key>find items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			set foundItems to foundItems &amp; (%@)
+		end tell
+	end timeout
+
+	return foundItems
+end run
+</string>
+	</dict>
+	<key>supported generic actions</key>
+	<array>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Find_iCal_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FindItemsAction</string>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Filter_iCal_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FilterItemsAction</string>
+			<key>Version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

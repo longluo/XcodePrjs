@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.mail.message-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Mail</string>
+	<key>AMCategory</key>
+	<string>AMCategoryMail</string>
+	<key>AMDefaultParameters</key>
+	<dict/>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDResult</key>
+		<string>Text of combined messages</string>
+		<key>AMDSummary</key>
+		<string>This action combines the text from a group of mail messages into a single piece of text.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Mail</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Message</string>
+		<string>Combine</string>
+		<string>Text</string>
+		<string>Create</string>
+		<string>Make</string>
+	</array>
+	<key>AMName</key>
+	<string>Combine Mail Messages</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.string</string>
+		</array>
+	</dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Combine Mail Messages</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Combine Mail Messages version 1.1, Copyright © 2004-2009 Apple Inc.  All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.CombineMessages</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2009 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMCombineMailMessagesAction</string>
+</dict>
+</plist>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.movie</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>QuickTime Player</string>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>targetURL</key>
+		<string></string>
+	</dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDAlert</key>
+		<string></string>
+		<key>AMDInput</key>
+		<string></string>
+		<key>AMDNote</key>
+		<string></string>
+		<key>AMDOptions</key>
+		<string></string>
+		<key>AMDRequires</key>
+		<string>This action requires QuickTime Player 7.</string>
+		<key>AMDResult</key>
+		<string></string>
+		<key>AMDSummary</key>
+		<string>This action inserts a web link into the specified QuickTime movie files. When the movie is clicked, the embedded URL is launched in a web browser.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>QuickTime Player</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Movie</string>
+		<string>URL</string>
+		<string>Set</string>
+	</array>
+	<key>AMName</key>
+	<string>Set Movie URL</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.applescript.alias-object.movie</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>QuickTime Player</string>
+			<key>Resource</key>
+			<string>com.apple.quicktimeplayer</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>7.0</string>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>11A455</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Set Movie URL</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Set Movie URL version 1.0, Copyright © 2004-2011 Apple Inc.  All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.SetMovieURL</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>10M2518</string>
+	<key>DTPlatformVersion</key>
+	<string>PG</string>
+	<key>DTSDKBuild</key>
+	<string>11A455</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0400</string>
+	<key>DTXcodeBuild</key>
+	<string>10M2518</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2011 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMAppleScriptAction</string>
+</dict>
+</plist>

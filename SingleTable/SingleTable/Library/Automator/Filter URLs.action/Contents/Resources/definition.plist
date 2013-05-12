@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application</key>
+	<string>Safari</string>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>url</string>
+			<key>plural name</key>
+			<string>urls</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>url</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The URL for "http://www.apple.com" is "http://www.apple.com"</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>scheme</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The scheme for "http://www.apple.com" is "http"</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>host</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The host for "http://www.apple.com" is "www.apple.com"</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>path</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The path for "http://www.apple.com/automator" is "/automator"</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The name for "http://www.apple.com/automator" is "automator"</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>query</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The query for "http://www.apple.com/automator?search=automator" is "search=automator"</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>contents</string>
+					<key>type</key>
+					<string>string</string>
+					<key>tooltip</key>
+					<string>The source of the webpage.</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alias</key>
+	<string>com.apple.alias-file</string>
+	<key>application</key>
+	<string>com.apple.application</string>
+	<key>folder</key>
+	<string>public.folder</string>
+	<key>is document</key>
+	<string>(kMDItemContentTypeTree = 'public.content') &amp;&amp; (kMDItemContentType != com.apple.mail.emlx) &amp;&amp; (kMDItemContentType != public.vcard)</string>
+	<key>is not document</key>
+	<string>!(kMDItemContentTypeTree = 'public.content') &amp;&amp; (kMDItemContentType != com.apple.mail.emlx) &amp;&amp; (kMDItemContentType != public.vcard)</string>
+	<key>audio</key>
+	<string>public.audio</string>
+	<key>image</key>
+	<string>public.image</string>
+	<key>movie</key>
+	<string>public.movie</string>
+</dict>
+</plist>

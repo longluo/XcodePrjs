@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application</key>
+	<string>Finder</string>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>file</string>
+			<key>plural name</key>
+			<string>files</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name extension</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>enumeration</key>
+					<array>
+						<string>Text File</string>
+						<string>Rich Text File</string>
+						<string>Rich Text Document</string>
+						<string>HTML File</string>
+						<string>Internet Location File</string>
+						<string>TIFF Image File</string>
+						<string>JPEG Image File</string>
+						<string>JPEG 2000 Image File</string>
+						<string>PICT Image File</string>
+						<string>GIF Image File</string>
+						<string>PNG Image File</string>
+						<string>BMP Image File</string>
+						<string>Adobe Photoshop Document</string>
+						<string>PDF File</string>
+						<string>Adobe InDesign Document</string>
+						<string>Adobe InDesign Template</string>
+						<string>Adobe InDesign Book</string>
+						<string>Adobe InDesign Library</string>
+						<string>AppleScript Text File</string>
+						<string>AppleScript Script File</string>
+						<string>AppleScript Script Bundle</string>
+					</array>
+					<key>name</key>
+					<string>file type</string>
+					<key>type</key>
+					<string>enumeration</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

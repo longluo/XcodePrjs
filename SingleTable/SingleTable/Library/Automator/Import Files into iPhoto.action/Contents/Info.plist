@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>iPhoto</string>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryPhotos</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>askForAlbum</key>
+		<false/>
+		<key>askForAlbumName</key>
+		<false/>
+		<key>chosenAlbum</key>
+		<string></string>
+		<key>importDestination</key>
+		<integer>0</integer>
+		<key>newAlbumName</key>
+		<string></string>
+		<key>shouldDelete</key>
+		<false/>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>of type JPEG (.jpg or .jpeg), JPEG2 (.jp2), TIFF (.tif or .tiff), or QuickTime (.qtif).</string>
+		<key>AMDSummary</key>
+		<string>This action imports files into an iPhoto album.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>iPhoto</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Import</string>
+		<string>Image</string>
+		<string>Picture</string>
+		<string>Photo</string>
+		<string>File</string>
+	</array>
+	<key>AMName</key>
+	<string>Import Files into iPhoto</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.iphoto.photo-object</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>iPhoto</string>
+			<key>Resource</key>
+			<string>com.apple.iPhoto</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.0.2</string>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Import Files into iPhoto</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.iPhotoImport</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.2.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMImportFilesintoiPhotoAction</string>
+</dict>
+</plist>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMDeprecated</key>
+	<true/>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.addressbook.item-object</string>
+		</array>
+	</dict>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.addressbook.item-object</string>
+		</array>
+	</dict>
+	<key>Specific Keywords</key>
+	<array>
+		<string>Find</string>
+		<string>Get</string>
+		<string>Address</string>
+		<string>Birthday</string>
+		<string>Person</string>
+		<string>Group</string>
+		<string>Phone</string>
+		<string>Email</string>
+	</array>
+	<key>application</key>
+	<string>Contacts</string>
+	<key>AMCategory</key>
+	<string>AMCategoryContacts</string>
+	<key>defined_types</key>
+	<dict>
+		<key>com.apple.addressbook.group-object</key>
+		<dict>
+			<key>name</key>
+			<string>Contacts groups</string>
+		</dict>
+		<key>com.apple.addressbook.item-object</key>
+		<dict>
+			<key>name</key>
+			<string>Contacts items</string>
+		</dict>
+		<key>com.apple.addressbook.person-object</key>
+		<dict>
+			<key>name</key>
+			<string>Contacts people</string>
+		</dict>
+	</dict>
+	<key>elements</key>
+	<array>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.addressbook.group-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.addressbook.group-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>application</string>
+			<key>name</key>
+			<string>group</string>
+			<key>plural name</key>
+			<string>groups</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AMAccepts</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Optional</key>
+				<true/>
+				<key>Types</key>
+				<array>
+					<string>com.apple.addressbook.person-object</string>
+				</array>
+			</dict>
+			<key>AMProvides</key>
+			<dict>
+				<key>Container</key>
+				<string>List</string>
+				<key>Types</key>
+				<array>
+					<string>com.apple.addressbook.person-object</string>
+				</array>
+			</dict>
+			<key>container</key>
+			<string>group</string>
+			<key>name</key>
+			<string>person</string>
+			<key>plural name</key>
+			<string>people</string>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>group</string>
+					<key>type</key>
+					<string>container</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>first name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>middle name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>last name</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>organization</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>company</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>department</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>title</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>job title</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>nickname</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>suffix</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>note</string>
+					<key>type</key>
+					<string>string</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>birth date</string>
+					<key>type</key>
+					<string>date</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>iconName</key>
+	<string>Contacts</string>
+	<key>scripts</key>
+	<dict>
+		<key>filter items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to {}
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			%@
+		end tell
+	end timeout
+
+	return foundItems
+
+end run
+</string>
+		<key>find every item</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			repeat with i in every %@
+				set foundItems to foundItems &amp; (%@)
+			end repeat
+		end tell
+	end timeout
+	
+	return foundItems
+end run</string>
+		<key>find items</key>
+		<string>on run {input, parameters}
+	
+	set foundItems to input
+	set currentDate to current date
+	set time of currentDate to 0
+	
+	with timeout of 900 seconds
+		tell application &quot;%@&quot;
+			set foundItems to foundItems &amp; (%@)
+		end tell
+	end timeout
+
+	return foundItems
+
+end run
+</string>
+		<key>get selected items</key>
+		<string>on run {input, parameters}
+	set output to {}
+	set currentSelection to {}
+	
+	tell application &quot;Contacts&quot;
+		set currentSelection to selection
+	end tell
+	set output to (input &amp; currentSelection)
+	return output
+end run
+</string>
+	</dict>
+	<key>supported generic actions</key>
+	<array>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Get_Selected_Address_Book_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>GetSelectedItemsAction</string>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>AMDReplacementActions</key>
+			<array>
+				<string>com.apple.Automator.Find_Address_Book_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FindItemsAction</string>
+			<key>Version</key>
+			<string>1.1</string>
+		</dict>
+		<dict>
+			<key>AMDReplacementAction</key>
+			<array>
+				<string>com.apple.Automator.Filter_Address_Book_Items_2</string>
+			</array>
+			<key>Class</key>
+			<string>FilterItemsAction</string>
+			<key>Version</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

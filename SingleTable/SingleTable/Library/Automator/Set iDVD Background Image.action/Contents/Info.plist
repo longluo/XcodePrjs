@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>iDVD</string>
+	<key>AMCanShowWhenRun</key>
+	<false/>
+	<key>AMCategory</key>
+	<string>AMCategoryMovies</string>
+	<key>AMDefaultParameters</key>
+	<dict/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string> An image file passed in from the previous action.</string>
+		<key>AMDRelatedActions</key>
+		<string>com.apple.AutomatorAction.ChoosePictures</string>
+		<key>AMDRequires</key>
+		<string>iDVD running and a menu displayed.</string>
+		<key>AMDSummary</key>
+		<string>This action lets you choose an image to appear in the background of the current iDVD menu.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>iDVD</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>DVD</string>
+		<string>Image</string>
+		<string>Photo</string>
+		<string>Menu</string>
+		<string>Set</string>
+	</array>
+	<key>AMName</key>
+	<string>Set iDVD Background Image</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array>
+		<dict>
+			<key>Display Name</key>
+			<string>iDVD</string>
+			<key>Resource</key>
+			<string>com.apple.iDVD</string>
+			<key>Type</key>
+			<string>application</string>
+			<key>Version</key>
+			<string>4.0.1</string>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Set iDVD Background Image</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.SetiDVDBackgroundImage</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMSetiDVDBackgroundImageAction</string>
+</dict>
+</plist>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.pubsub.entry</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Safari</string>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<true/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryInternet</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>predicate</key>
+		<data>
+		</data>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDNote</key>
+		<string>Not all RSS articles are created with every one of the filters  provided in this action.</string>
+		<key>AMDRelatedActions</key>
+		<array>
+			<string>com.apple.Automator.Get_Text_from_Articles</string>
+			<string>com.apple.Automator.Get_Permalinks_of_Articles</string>
+		</array>
+		<key>AMDSummary</key>
+		<string>This action evaluates RSS articles to see that they match the criteria specified. You can filter on specific elements within the article.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>RSS</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>RSS</string>
+		<string>Atom</string>
+		<string>Feed</string>
+		<string>Subscribe</string>
+		<string>Filter</string>
+	</array>
+	<key>AMName</key>
+	<string>Filter Articles</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.pubsub.entry</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Filter Articles</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.Filter_Articles</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Filter Articles</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2007-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>Filter_Feed_Entries</string>
+</dict>
+</plist>

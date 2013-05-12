@@ -1,0 +1,21 @@
+//	File: avfDesktopDebug.xcconfig
+// 
+//	$Log$ 
+//	27apr2010 ABB
+//	7913679 Define OTHER_CFLAGS <jim>
+//
+//	24apr2010 jim
+//	clean up xcconfig files <jeremyj, nikhil>
+//
+//	18apr2010 jim
+//	first time. <abb>
+// 
+
+XCCONFIG_AVF_DESKTOP_DEBUG = INCLUDED
+
+#include "avfDesktop__.xcconfig"
+#include "avf__Debug.xcconfig"
+
+ONLY_ACTIVE_ARCH = YES
+
+OTHER_CFLAGS = $(value) $(AVF_DESKTOP_CFLAGS) $(AVF_DEBUG_CFLAGS)

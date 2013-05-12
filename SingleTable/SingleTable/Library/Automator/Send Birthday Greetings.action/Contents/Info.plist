@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<false/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.addressbook.person-object</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<string>Mail</string>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<string>AMCategoryMail</string>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>mailImage</key>
+		<integer>1</integer>
+		<key>mailMessage</key>
+		<string>Happy Birthday!</string>
+		<key>randomSelection</key>
+		<false/>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDRelatedActions</key>
+		<array>
+			<string>com.apple.Automator.BirthdayIsToday</string>
+			<string>com.apple.Automator.SendOutgoingMessages</string>
+		</array>
+		<key>AMDSummary</key>
+		<string>This action sends an email with a birthday greeting.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Mail</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>Birthday</string>
+		<string>Send</string>
+		<string>Message</string>
+		<string>Mail</string>
+		<string>Person</string>
+		<string>Date</string>
+		<string>Photo</string>
+		<string>Image</string>
+	</array>
+	<key>AMName</key>
+	<string>Send Birthday Greetings</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.mail.message-object</string>
+		</array>
+	</dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Send Birthday Greetings</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.SendBirthdayGreeting</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AMSendBirthdayGreetingsAction</string>
+</dict>
+</plist>

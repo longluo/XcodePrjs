@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.string</string>
+		</array>
+	</dict>
+	<key>AMApplication</key>
+	<array>
+		<string>Mail</string>
+		<string>Calendar</string>
+	</array>
+	<key>AMCanShowSelectedItemsWhenRun</key>
+	<true/>
+	<key>AMCanShowWhenRun</key>
+	<true/>
+	<key>AMCategory</key>
+	<array>
+		<string>AMCategoryCalendar</string>
+		<string>AMCategoryMail</string>
+	</array>
+	<key>AMDefaultParameters</key>
+	<dict>
+		<key>alarmDate</key>
+		<string></string>
+		<key>alarmEmail</key>
+		<string></string>
+		<key>alarmFile</key>
+		<string>/Applications/Calendars.app</string>
+		<key>alarmKickoff</key>
+		<integer>6</integer>
+		<key>alarmScript</key>
+		<string></string>
+		<key>alarmSound</key>
+		<string></string>
+		<key>alarmTime</key>
+		<string></string>
+		<key>alarmTimeInterval</key>
+		<string>0</string>
+		<key>alarmType</key>
+		<string></string>
+		<key>calendarName</key>
+		<string>New Calendar</string>
+		<key>calendarUID</key>
+		<string></string>
+		<key>dueDate</key>
+		<string></string>
+		<key>dueDateEnabled</key>
+		<false/>
+		<key>existingCalendar</key>
+		<integer>1</integer>
+		<key>priority</key>
+		<integer>5</integer>
+		<key>priorityEnabled</key>
+		<false/>
+		<key>todoTitle</key>
+		<string></string>
+	</dict>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDSummary</key>
+		<string>This action creates a new Reminders item.  If given input, it will use the input as the titles of the reminders.</string>
+	</dict>
+	<key>AMIconName</key>
+	<string>Reminders</string>
+	<key>AMKeywords</key>
+	<array>
+		<string>To Do</string>
+		<string>Todo</string>
+		<string>Reminder</string>
+	</array>
+	<key>AMName</key>
+	<string>New Reminders Item</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.calendar-store.todo</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>BuildMachineOSBuild</key>
+	<string>12A2053</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>New Reminders Item</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.Automator.New_To_Do_Item</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>New Reminders Item</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.0.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4F212</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12A2053</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0440</string>
+	<key>DTXcodeBuild</key>
+	<string>4F212</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2006-2012 Apple Inc.  All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>New_To_Do_Item</string>
+</dict>
+</plist>

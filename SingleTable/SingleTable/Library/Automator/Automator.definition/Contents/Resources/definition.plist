@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>defined_types</key>
+	<dict>
+		<key>*</key>
+		<dict>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<key>com.adobe.pdf</key>
+		<dict>
+			<key>name</key>
+			<string>PDF files</string>
+		</dict>
+		<key>com.apple.applescript.alias-object.pdf</key>
+		<dict>
+			<key>name</key>
+			<string>PDF files</string>
+		</dict>
+		<key>com.apple.applescript.data-object</key>
+		<dict>
+			<key>name</key>
+			<string>Data</string>
+		</dict>
+		<key>com.apple.applescript.object</key>
+		<dict>
+			<key>name</key>
+			<string>Anything</string>
+		</dict>
+		<key>com.apple.applescript.text-object</key>
+		<dict>
+			<key>name</key>
+			<string>Text</string>
+		</dict>
+		<key>com.apple.applescript.url-object</key>
+		<dict>
+			<key>name</key>
+			<string>URLs</string>
+		</dict>
+		<key>com.apple.cocoa.path</key>
+		<dict>
+			<key>name</key>
+			<string>Files/Folders</string>
+		</dict>
+		<key>com.apple.cocoa.string</key>
+		<dict>
+			<key>name</key>
+			<string>Text</string>
+		</dict>
+		<key>com.apple.cocoa.data</key>
+		<dict>
+			<key>name</key>
+			<string>Data</string>
+		</dict>
+		<key>com.apple.cocoa.url</key>
+		<dict>
+			<key>name</key>
+			<string>URLs</string>
+		</dict>
+		<key>com.apple.idvd.menu-object</key>
+		<dict>
+			<key>name</key>
+			<string>iDVD menus</string>
+		</dict>
+		<key>com.apple.idvd.slideshow-object</key>
+		<dict>
+			<key>name</key>
+			<string>iDVD slideshows</string>
+		</dict>
+		<key>com.apple.quicktime-movie</key>
+		<dict>
+			<key>name</key>
+			<string>Movie files</string>
+		</dict>
+		<key>public.movie</key>
+		<dict>
+			<key>name</key>
+			<string>Movie files</string>
+		</dict>
+		<key>com.apple.applescript.alias-object.movie</key>
+		<dict>
+			<key>name</key>
+			<string>Movie files</string>
+		</dict>
+		<key>com.apple.safari.document-object</key>
+		<dict>
+			<key>name</key>
+			<string>Safari documents</string>
+		</dict>
+		<key>com.apple.spotlight.item</key>
+		<dict>
+			<key>name</key>
+			<string>Spotlight items</string>
+		</dict>
+		<key>com.apple.textedit.document-object</key>
+		<dict>
+			<key>name</key>
+			<string>TextEdit documents</string>
+		</dict>
+		<key>com.microsoft.powerpoint.presentation-object</key>
+		<dict>
+			<key>name</key>
+			<string>PowerPoint presentations</string>
+		</dict>
+		<key>com.microsoft.powerpoint.slide-object</key>
+		<dict>
+			<key>name</key>
+			<string>PowerPoint slides</string>
+		</dict>
+		<key>public.image</key>
+		<dict>
+			<key>name</key>
+			<string>Image files</string>
+		</dict>
+		<key>com.apple.applescript.alias-object.image</key>
+		<dict>
+			<key>name</key>
+			<string>Image files</string>
+		</dict>
+		<key>public.item</key>
+		<dict>
+			<key>name</key>
+			<string>Files/Folders</string>
+		</dict>
+		<key>com.apple.applescript.alias-object</key>
+		<dict>
+			<key>name</key>
+			<string>Files/Folders</string>
+		</dict>
+		<key>com.apple.finder.file-or-folder-object</key>
+		<dict>
+			<key>name</key>
+			<string>Files/Folders</string>
+		</dict>
+		<key>com.apple.pubsub.feed</key>
+		<dict>
+			<key>name</key>
+			<string>RSS feeds</string>
+		</dict>
+		<key>com.apple.pubsub.entry</key>
+		<dict>
+			<key>name</key>
+			<string>RSS articles</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
