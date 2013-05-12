@@ -34,6 +34,7 @@
 {
     [super viewDidLoad];
 
+    /*
     // Add begin by long.luo @2013/03/25
     // Initialize table data
     tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
@@ -49,6 +50,16 @@
     // Initialize Preparation Time
     prepTime = [NSArray arrayWithObjects:@"30 min", @"30 min", @"20 min", @"30 min", @"10 min", @"1 hour", @"45 min", @"5 min", @"30 min", @"8 min", @"20 min", @"20 min", @"5 min", @"1.5 hour", @"4 hours", @"10 min", nil];
     // Added end.
+    */
+    
+    // Find out the path of recipes.plist
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
+    
+    // Load the file content and read the data into arrays
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    tableData = [dict objectForKey:@"RecipeName"];
+    thumbnails = [dict objectForKey:@"Thumbnail"];
+    prepTime = [dict objectForKey:@"PrepTime"];
 }
 
 

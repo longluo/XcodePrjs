@@ -27,6 +27,7 @@
 		4F710A6D1700B12A00A6B9FF /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5D1700B12A00A6B9FF /* thai_shrimp_cake.jpg */; };
 		4F710A6E1700B12A00A6B9FF /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */; };
 		4F710A6F1700B12A00A6B9FF /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */; };
+		4FC63036173F52B100663A3A /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FC63035173F52B100663A3A /* recipes.plist */; };
 		4FE4C36616FF664D00763D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36516FF664D00763D2C /* UIKit.framework */; };
 		4FE4C36816FF664D00763D2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36716FF664D00763D2C /* Foundation.framework */; };
 		4FE4C36A16FF664D00763D2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE4C36916FF664D00763D2C /* CoreGraphics.framework */; };
@@ -63,6 +64,7 @@
 		4F710A5D1700B12A00A6B9FF /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		4F710A5E1700B12A00A6B9FF /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		4F710A5F1700B12A00A6B9FF /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		4FC63035173F52B100663A3A /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		4FE4C36216FF664D00763D2C /* SingleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE4C36516FF664D00763D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FE4C36716FF664D00763D2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,6 +156,7 @@
 				4F1A2165170ECB060077C43B /* SimpleTableCell.xib */,
 				4F1A2167170ECCA80077C43B /* SimpleTableCell.h */,
 				4F1A2168170ECCA80077C43B /* SimpleTableCell.m */,
+				4FC63035173F52B100663A3A /* recipes.plist */,
 			);
 			name = SimpleTable;
 			path = SingleTable;
@@ -250,6 +253,7 @@
 				4F1A2166170ECB060077C43B /* SimpleTableCell.xib in Resources */,
 				4F1A216B170EF3230077C43B /* Default.png in Resources */,
 				4F1A216D170EF34F0077C43B /* Default@2x.png in Resources */,
+				4FC63036173F52B100663A3A /* recipes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
