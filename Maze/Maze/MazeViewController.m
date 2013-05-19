@@ -48,6 +48,70 @@
     bounce3.repeatCount = HUGE_VALF;
     bounce3.autoreverses = YES;
     [self.ghost3.layer addAnimation:bounce3 forKey:@"position"];
+    
+    
+    // Movement of pacman
+    self.lastUpdateTime = [[NSDate alloc] init];
+    
+    self.currentPoint  = CGPointMake(0, 144);
+    self.motionManager = [[CMMotionManager alloc]  init];
+    self.queue         = [[NSOperationQueue alloc] init];
+    
+    self.motionManager.accelerometerUpdateInterval = kUpdateInterval;
+    
+    [self.motionManager startAccelerometerUpdatesToQueue:self.queue withHandler:
+     ^(CMAccelerometerData *accelerometerData, NSError *error) {
+         [(id) self setAcceleration:accelerometerData.acceleration];
+         [self performSelectorOnMainThread:@selector(update) withObject:nil waitUntilDone:NO];
+     }];
+}
+
+
+- (void)movePacman {
+    
+    // Save previous position
+    self.previousPoint = self.currentPoint;
+
+    // Move pacman to its new position
+    CGRect frame = self.pacman.frame;
+    frame.origin.x = self.currentPoint.x;
+    frame.origin.y = self.currentPoint.y;
+    
+    self.pacman.frame = frame;
+    
+    // Rotate the sprite
+    CGFloat newAngle = (self.pacmanXVelocity + self.pacmanYVelocity) * M_PI * 4;
+    self.angle += newAngle * kUpdateInterval;
+    
+    CABasicAnimation *rotate;
+    rotate                     = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    rotate.fromValue           = [NSNumber numberWithFloat:0];
+    rotate.toValue             = [NSNumber numberWithFloat:self.angle];
+    rotate.duration            = kUpdateInterval;
+    rotate.repeatCount         = 1;
+    rotate.removedOnCompletion = NO;
+    rotate.fillMode            = kCAFillModeForwards;
+    [self.pacman.layer addAnimation:rotate forKey:@"10"];
+    
+}
+
+- (void)update {
+    
+    NSTimeInterval secondsSinceLastDraw = -([self.lastUpdateTime timeIntervalSinceNow]);
+    
+    self.pacmanYVelocity = self.pacmanYVelocity - (self.acceleration.x * secondsSinceLastDraw);
+    self.pacmanXVelocity = self.pacmanXVelocity - (self.acceleration.y * secondsSinceLastDraw);
+    
+    CGFloat xDelta = secondsSinceLastDraw * self.pacmanXVelocity * 500;
+    CGFloat yDelta = secondsSinceLastDraw * self.pacmanYVelocity * 500;
+    
+    self.currentPoint = CGPointMake(self.currentPoint.x + xDelta,
+                                    self.currentPoint.y + yDelta);
+    
+    [self movePacman];
+    
+    self.lastUpdateTime = [NSDate date];
+    
 }
 
 
