@@ -1,0 +1,68 @@
+EXPLANATIONS FOR DAN'S RUNTIME
+------------------------------
+
+Dan's Runtime is an example of how one can implement a runtime for a programming
+language. It demonstrates how to implement object-oriented classes with method
+calls to overridable methods, and also implements a generational incremental
+garbage collector as well as a mark/sweep garbage collector.
+
+
+HOW DO I BEST LEARN WHAT THIS DOES?
+
+Although the code is heavily commented and explains the rationale behind every
+function, I suggest you simply run this in your debugger, set a breakpoint in
+main() and step through the code, reading the comments for each function as you
+watch it do its thing.
+
+It's pretty pointless to just compile the app and run it in the console. The
+interesting stuff happens behind the scenes.
+
+You may also want to play with the USE_INCREMENTAL_COLLECTOR constant. Set it
+to 1 to try out the incremental collector, leave it on 0 to use the simpler
+mark/sweep collector.
+
+
+WHAT ABOUT NON-VIRTUAL FUNCTIONS?
+
+Non-virtual functions are very simple and don't need any special support from
+the runtime, so they aren't demonstrated here. Essentially, when you call a
+non-virtual function on an object with code like:
+
+	myObject.Function( 1 );
+	
+what the compiler generates is a call like:
+
+	MyClass_Function( myObject, 1 );
+
+Since nobody can override a non-virtual function, it's simply a function call
+where the "this" or "self" parameter is inserted as the first parameter.
+
+Virtual functions work the same way, but since each class can provide its own
+version, you need to look up which function to actually call for the same
+method name.
+
+
+CAN I USE THIS IN MY OWN PROGRAMS?
+
+Well, it's mainly sample code, so I scrimped in places and made it easily
+understandable instead of optimized. E.g. look-up of virtual functions is rather
+slow because it does a linear search through the VTable.
+
+But yes, if you want to use this as the basis for your application, all I
+request is a "Thanks to" in your application's about screen (or equivalent
+place). Also, please do not remove any of the markings, Copyright etc. from the
+files and code, and do not redistribute modified versions of these files unless
+you have clearly marked them as modified by you.
+
+If you want to reach me, my web site is
+
+	http://www.zathras.de
+	
+and you can also reach me via e-mail as:
+
+	witness_dot_of_dot_teachtext_at_gmx_dot_net
+	
+That's all.
+
+
+(c) 2007 by M. Uli Kusterer, all rights reserved.
